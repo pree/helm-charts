@@ -9,7 +9,7 @@ sonarr:
     namespace: "media-mgmt"
   # sonarr.repoURL -- Repo URL
   # @default -- [repo](https://github.com/k8s-at-home/charts)
-  repoURL: "https://github.com/k8s-at-home/charts"
+  repoURL: "https://k8s-at-home.com/charts"
   # sonarr.chart -- Chart
   chart: "sonarr"
   # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr)
