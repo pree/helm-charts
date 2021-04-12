@@ -1,0 +1,4 @@
+The following apps are available:
+{{ if .Values.sonarr.enabled }}
+* Sonarr
+{{ end }}

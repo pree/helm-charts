@@ -1,0 +1,19 @@
+# sonarr -- [Sonarr](https://sonarr.tv/)
+# @default -- [example](./examples/sonarr.yaml)
+sonarr:
+  # sonarr.enabled -- Enable Sonarr
+  enabled: false
+  name: sonarr
+  destination:
+    # sonarr.destination.namespace -- Namespace
+    namespace: "media-mgmt"
+  # sonarr.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  repoURL: "https://github.com/k8s-at-home/charts"
+  # sonarr.chart -- Chart
+  chart: "sonarr"
+  # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr)
+  targetRevision: "10.2.*"
+  # sonarr.values -- Helm values
+  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/sonarr/values.yaml)
+  values: {}
