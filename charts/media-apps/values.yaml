@@ -17,3 +17,23 @@ sonarr:
   # sonarr.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/sonarr/values.yaml)
   values: {}
+
+# radarr -- [Radarr](https://radarr.video/)
+# @default -- [example](./examples/radarr.yaml)
+radarr:
+  # radarr.enabled -- Enable Radarr
+  enabled: false
+  name: radarr
+  destination:
+    # radarr.destination.namespace -- Namespace
+    namespace: "media-mgmt"
+  # radarr.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  repoURL: "https://k8s-at-home.com/charts"
+  # radarr.chart -- Chart
+  chart: "radarr"
+  # radarr.targetRevision -- [radarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr)
+  targetRevision: "10.2.*"
+  # radarr.values -- Helm values
+  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/radarr/values.yaml)
+  values: {}

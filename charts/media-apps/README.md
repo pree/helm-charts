@@ -26,6 +26,13 @@ Argo CD app-of-apps config for media applications
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| radarr | object | [example](./examples/radarr.yaml) | [Radarr](https://radarr.video/) |
+| radarr.chart | string | `"radarr"` | Chart |
+| radarr.destination.namespace | string | `"media-mgmt"` | Namespace |
+| radarr.enabled | bool | `false` | Enable Radarr |
+| radarr.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
+| radarr.targetRevision | string | `"10.2.*"` | [radarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr) |
+| radarr.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/radarr/values.yaml) | Helm values |
 | sonarr | object | [example](./examples/sonarr.yaml) | [Sonarr](https://sonarr.tv/) |
 | sonarr.chart | string | `"sonarr"` | Chart |
 | sonarr.destination.namespace | string | `"media-mgmt"` | Namespace |
