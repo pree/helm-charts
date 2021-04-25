@@ -1,0 +1,13 @@
+mosquitto:
+  enabled: true
+  values:
+    env:
+      TZ: "Europe/Berlin"
+    
+    persistence:
+      data:
+        enabled: true
+
+      configinc:
+        enabled: true
+        existingClaim: pvc-mosquittoconfig

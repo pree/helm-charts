@@ -1,0 +1,19 @@
+# mosquitto -- [Mosquitto](http://mosquitto.org/)
+# @default -- [example](./examples/mosquitto.yaml)
+mosquitto:
+  # mosquitto.enabled -- Enable Mosquitto
+  enabled: false
+  name: mosquitto
+  destination:
+    # mosquitto.destination.namespace -- Namespace
+    namespace: "ha-apps"
+  # mosquitto.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  repoURL: "https://k8s-at-home.com/charts"
+  # mosquitto.chart -- Chart
+  chart: "mosquitto"
+  # mosquitto.targetRevision -- [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto)
+  targetRevision: "2.2.*"
+  # mosquitto.values -- Helm values
+  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/mosquitto/values.yaml)
+  values: {}

@@ -1,0 +1,17 @@
+apiVersion: v2
+name: ha-apps
+description: Argo CD app-of-apps config for home automation applications
+type: application
+# version and appVersion are in sync in this chart!
+version: 0.1.0
+appVersion: 0.1.0
+home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/ha-apps
+sources:
+  - https://git.reeb.io/pree/helm-charts
+maintainers:
+  - name: Pascal Reeb (pree)
+    email: pascal@reeb.io
+dependencies:
+  - name: argoconfig
+    version: 0.7.2
+    repository: https://charts.adfinis.com
