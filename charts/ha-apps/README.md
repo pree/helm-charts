@@ -26,13 +26,13 @@ Argo CD app-of-apps config for home automation applications
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| home-assistant | object | [example](./examples/home-assistant.yaml) | [Home Asistant](https://home-assistant.io) |
-| home-assistant.chart | string | `"home-assistant"` | Chart |
-| home-assistant.destination.namespace | string | `"ha-apps"` | Namespace |
-| home-assistant.enabled | bool | `false` | Enable Home Assistant |
-| home-assistant.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| home-assistant.targetRevision | string | `"10.1.*"` | [Home Assistant Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant) |
-| home-assistant.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/home-assistant/values.yaml) | Helm values |
+| homeassistant | object | [example](./examples/homeassistant.yaml) | [Home Asistant](https://home-assistant.io) |
+| homeassistant.chart | string | `"homeassistant"` | Chart |
+| homeassistant.destination.namespace | string | `"ha-apps"` | Namespace |
+| homeassistant.enabled | bool | `false` | Enable Home Assistant |
+| homeassistant.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
+| homeassistant.targetRevision | string | `"10.1.*"` | [Home Assistant Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant) |
+| homeassistant.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/home-assistant/values.yaml) | Helm values |
 | mosquitto | object | [example](./examples/mosquitto.yaml) | [Mosquitto](https://mosquitto.org/) |
 | mosquitto.chart | string | `"mosquitto"` | Chart |
 | mosquitto.destination.namespace | string | `"ha-apps"` | Namespace |

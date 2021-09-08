@@ -1,4 +1,4 @@
-home-assistant:
+homeassistant:
   enabled: true
   values:
     env:
@@ -7,4 +7,4 @@ home-assistant:
     persistence:
       config:
         enabled: true
-        existingClaim: pvc-home-assistant-config
+        existingClaim: pvc-homeassistant-config
