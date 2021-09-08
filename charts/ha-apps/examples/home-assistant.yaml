@@ -1,0 +1,10 @@
+home-assistant:
+  enabled: true
+  values:
+    env:
+      TZ: "Europe/Berlin"
+    
+    persistence:
+      config:
+        enabled: true
+        existingClaim: pvc-home-assistant-config
