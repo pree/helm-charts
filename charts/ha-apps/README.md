@@ -26,12 +26,19 @@ Argo CD app-of-apps config for home automation applications
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| mosquitto | object | [example](./examples/mosquitto.yaml) | [Mosquitto](http://mosquitto.org/) |
+| home-assistant | object | [example](./examples/home-assistant.yaml) | [Home Asistant](https://home-assistant.io) |
+| home-assistant.chart | string | `"home-assistant"` | Chart |
+| home-assistant.destination.namespace | string | `"ha-apps"` | Namespace |
+| home-assistant.enabled | bool | `false` | Enable Home Assistant |
+| home-assistant.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
+| home-assistant.targetRevision | string | `"10.1.*"` | [Home Assistant Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant) |
+| home-assistant.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/home-assistant/values.yaml) | Helm values |
+| mosquitto | object | [example](./examples/mosquitto.yaml) | [Mosquitto](https://mosquitto.org/) |
 | mosquitto.chart | string | `"mosquitto"` | Chart |
 | mosquitto.destination.namespace | string | `"ha-apps"` | Namespace |
 | mosquitto.enabled | bool | `false` | Enable Mosquitto |
 | mosquitto.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| mosquitto.targetRevision | string | `"2.2.*"` | [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto) |
+| mosquitto.targetRevision | string | `"2.2.*"` | [mosquitto Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto) |
 | mosquitto.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/mosquitto/values.yaml) | Helm values |
 
 ----------------------------------------------
