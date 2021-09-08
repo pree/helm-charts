@@ -11,7 +11,7 @@ homeassistant:
   # @default -- [repo](https://github.com/k8s-at-home/charts)
   repoURL: "https://k8s-at-home.com/charts"
   # homeassistant.chart -- Chart
-  chart: "homeassistant"
+  chart: "home-assistant"
   # homeassistant.targetRevision -- [Home Assistant Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant)
   targetRevision: "10.1.*"
   # homeassistant.values -- Helm values
