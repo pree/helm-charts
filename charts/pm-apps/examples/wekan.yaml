@@ -1,0 +1,11 @@
+wekan:
+  enabled: true
+  values:
+    autoscaling:
+      enabled: false
+    
+    mongodb:
+      replicaCount: 1
+    
+    service:
+      type: ClusterIP

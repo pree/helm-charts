@@ -1,0 +1,19 @@
+# wekan -- [Wekan](https://wekan.github.io/)
+# @default -- [example](./examples/wekan.yaml)
+wekan:
+  # wekan.enabled -- Enable Wekan
+  enabled: false
+  name: wekan
+  destination:
+    # wekan.destination.namespace -- Namespace
+    namespace: "pm-apps"
+  # wekan.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/wekan/charts)
+  repoURL: "https://wekan.github.io/charts"
+  # wekan.chart -- Chart
+  chart: "wekan"
+  # wekan.targetRevision -- [wekan Helm chart](https://github.com/wekan/charts/tree/master/charts/wekan)
+  targetRevision: "1.1.*"
+  # wekan.values -- Helm values
+  # @default -- [upstream values](https://github.com/wekan/charts/blob/master/charts/wekan/values.yaml)
+  values: {}
