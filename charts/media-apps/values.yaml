@@ -37,3 +37,23 @@ radarr:
   # radarr.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/radarr/values.yaml)
   values: {}
+
+# jakett -- [Jakett](https://github.com/Jackett/Jackett)
+# @default -- [example](./examples/jackett.yaml)
+jackett:
+  # jackett.enabled -- Enable Jackett
+  enabled: false
+  name: jackett
+  destination:
+    # jackett.destination.namespace -- Namespace
+    namespace: "media-apps"
+  # jackett.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  repoURL: "https://k8s-at-home.com/charts"
+  # jackett.chart -- Chart
+  chart: "jackett"
+  # jackett.targetRevision -- [jackett Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett)
+  targetRevision: "11.4.*"
+  # jackett.values -- Helm values
+  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/jackett/values.yaml)
+  values: {}
