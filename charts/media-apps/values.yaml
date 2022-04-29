@@ -13,7 +13,7 @@ sonarr:
   # sonarr.chart -- Chart
   chart: "sonarr"
   # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr)
-  targetRevision: "16.1.*"
+  targetRevision: "16.*"
   # sonarr.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/sonarr/values.yaml)
   values: {}
@@ -33,7 +33,7 @@ radarr:
   # radarr.chart -- Chart
   chart: "radarr"
   # radarr.targetRevision -- [radarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr)
-  targetRevision: "16.1.*"
+  targetRevision: "16.*"
   # radarr.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/radarr/values.yaml)
   values: {}
@@ -53,7 +53,7 @@ jackett:
   # jackett.chart -- Chart
   chart: "jackett"
   # jackett.targetRevision -- [jackett Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett)
-  targetRevision: "11.4.*"
+  targetRevision: "11.*"
   # jackett.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/jackett/values.yaml)
   values: {}
