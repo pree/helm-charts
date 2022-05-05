@@ -57,3 +57,23 @@ jackett:
   # jackett.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/jackett/values.yaml)
   values: {}
+
+# prowlarr -- [Prowlarr](https://github.com/Prowlarr/Prowlarr)
+# @default -- [example](./examples/prowlarr.yaml)
+prowlarr:
+  # prowlarr.enabled -- Enable Prowlarr
+  enabled: false
+  name: prowlarr
+  destination:
+    # prowlarr.destination.namespace -- Namespace
+    namespace: "media-apps"
+  # prowlarr.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  repoURL: "https://k8s-at-home.com/charts"
+  # prowlarr.chart -- Chart
+  chart: "prowlarr"
+  # prowlarr.targetRevision -- [prowlarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr)
+  targetRevision: "4.*"
+  # prowlarr.values -- Helm values
+  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/prowlarr/values.yaml)
+  values: {}
