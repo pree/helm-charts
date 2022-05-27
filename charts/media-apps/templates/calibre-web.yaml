@@ -1,8 +1,8 @@
-{{ if .Values.calibre-web.enabled }}
-{{ template "argoconfig.application" (list . "media-apps.calibre-web") }}
+{{ if .Values.calibreWeb.enabled }}
+{{ template "argoconfig.application" (list . "media-apps.calibreWeb") }}
 {{ end }}
 
-{{- define "media-apps.calibre-web" -}}{{- $app := unset .Values.calibre-web "enabled" -}}{{- $name := default $app.namespace $app.name -}}
+{{- define "media-apps.calibreWeb" -}}{{- $app := unset .Values.calibreWeb "enabled" -}}{{- $name := default $app.namespace $app.name -}}
 metadata:
   name: {{ template "common.fullname" . }}-{{ $name }}
 spec:

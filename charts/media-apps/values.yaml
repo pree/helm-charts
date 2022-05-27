@@ -98,22 +98,22 @@ calibre:
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre/values.yaml)
   values: {}
 
-# calibre-web -- [calibre-web](https://github.com/janeczku/calibre-web)
-# @default -- [example](./examples/calibre-web.yaml)
-calibre-web:
-  # calibre-web.enabled -- Enable calibre-web
+# calibreWeb -- [calibreWeb](https://github.com/janeczku/calibre-web)
+# @default -- [example](./examples/calibreWeb.yaml)
+calibreWeb:
+  # calibreWeb.enabled -- Enable calibreWeb
   enabled: false
-  name: calibre-web
+  name: calibreWeb
   destination:
-    # calibre-web.destination.namespace -- Namespace
+    # calibreWeb.destination.namespace -- Namespace
     namespace: "media-apps"
-  # calibre-web.repoURL -- Repo URL
+  # calibreWeb.repoURL -- Repo URL
   # @default -- [repo](https://github.com/k8s-at-home/charts)
   repoURL: "https://k8s-at-home.com/charts"
-  # calibre-web.chart -- Chart
+  # calibreWeb.chart -- Chart
   chart: "calibre-web"
-  # calibre-web.targetRevision -- [calibre-web Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre-web)
+  # calibreWeb.targetRevision -- [calibreWeb Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre-web)
   targetRevision: "8.*"
-  # calibre-web.values -- Helm values
+  # calibreWeb.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre-web/values.yaml)
   values: {}
