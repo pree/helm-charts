@@ -77,3 +77,23 @@ prowlarr:
   # prowlarr.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/prowlarr/values.yaml)
   values: {}
+
+# calibre -- [calibre](https://github.com/kovidgoyal/calibre)
+# @default -- [example](./examples/calibre.yaml)
+calibre:
+  # calibre.enabled -- Enable calibre
+  enabled: false
+  name: calibre
+  destination:
+    # calibre.destination.namespace -- Namespace
+    namespace: "media-apps"
+  # calibre.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  repoURL: "https://k8s-at-home.com/charts"
+  # calibre.chart -- Chart
+  chart: "calibre"
+  # calibre.targetRevision -- [calibre Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre)
+  targetRevision: "5.*"
+  # calibre.values -- Helm values
+  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre/values.yaml)
+  values: {}
