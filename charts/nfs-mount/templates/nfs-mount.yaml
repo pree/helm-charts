@@ -1,9 +1,8 @@
-{{- $volume := (include "nfs-mount.fullname" .) }}
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: {{ $volume }}
+  name: {{ .Values.volumeName }}
 spec:
   accessModes:
     - ReadWriteOnce
@@ -18,7 +17,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: {{ .Release.Name }}
 spec:
-  volumeName: {{ $volume }}
+  volumeName: {{ .Values.volumeName }}
   storageClassName: ""
   accessModes:
     - ReadWriteOnce

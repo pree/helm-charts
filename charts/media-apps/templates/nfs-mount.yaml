@@ -17,6 +17,7 @@ spec:
       releaseName: {{ $name | quote }}
       values: |-
         nameOverride: {{ $name | quote }}
+        volumeName: "{{ template "common.fullname" . }}-{{ $name }}"
         {{- $app.values | toYaml | nindent 8 }}
   {{- if $app.destination }}
   destination:

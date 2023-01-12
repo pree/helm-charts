@@ -4,3 +4,4 @@ server: 1.2.3.4
 path: /mnt/data01/media
 # size -- NFS share size
 size: "10Gi"
+# volumeName -- PersistentVolume Name

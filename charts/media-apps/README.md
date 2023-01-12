@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.0](https://img.shields.io/badge/AppVersion-0.3.0-informational?style=flat-square)
+![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.2](https://img.shields.io/badge/AppVersion-0.3.2-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -47,12 +47,13 @@ Argo CD app-of-apps config for media applications
 | jackett.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
 | jackett.targetRevision | string | `"11.*"` | [jackett Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett) |
 | jackett.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/jackett/values.yaml) | Helm values |
-| nfsMount | object | `{"destination":{"namespace":"media-apps"},"enabled":false,"name":"nas-media","nfsPath":"/mnt/data01/media","server":"1.2.3.4","size":"10Gi"}` | This is used to create a PVC for a media share via NFS |
+| nfsMount | object | `{"chart":"nfs-mount","destination":{"namespace":"media-apps"},"enabled":false,"name":"nas-media","repoURL":"https://charts.pree.dev","targetRevision":"0.1.*","values":{}}` | This is used to create a PVC for a media share via NFS |
+| nfsMount.chart | string | `"nfs-mount"` | Chart |
 | nfsMount.destination.namespace | string | `"media-apps"` | Namespace |
 | nfsMount.enabled | bool | `false` | Enable nfsMount |
-| nfsMount.name | string | `"nas-media"` | Name |
-| nfsMount.server | string | `"1.2.3.4"` | NFS Server |
-| nfsMount.size | string | `"10Gi"` | Size of NFS mount |
+| nfsMount.repoURL | string | [repo](https://git.reeb.io/pree/helm-charts) | Repo URL |
+| nfsMount.targetRevision | string | `"0.1.*"` | [nfsMount Helm chart](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount) |
+| nfsMount.values | object | [upstream values](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/values.yaml) | Helm values |
 | prowlarr | object | [example](./examples/prowlarr.yaml) | [Prowlarr](https://github.com/Prowlarr/Prowlarr) |
 | prowlarr.chart | string | `"prowlarr"` | Chart |
 | prowlarr.destination.namespace | string | `"media-apps"` | Namespace |
