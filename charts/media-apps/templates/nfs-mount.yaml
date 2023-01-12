@@ -1,0 +1,30 @@
+{{ if .Values.nfsMount.enabled }}
+{{- $name := printf "%s-%s" .Release.Name .Values.nfsMount.name }}
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ $name }}
+spec:
+  accessModes:
+    - ReadOnlyMany
+  capacity:
+    storage: "16Ti"
+  nfs:
+    path: {{ .Values.nfsMount.path }}
+    server: {{ .Values.nfsMount.server }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ $name }}
+  namespace: {{ .Values.nfsMount.destination.namespace }}
+spec:
+  volumeName: {{ $name }}
+  storageClassName: ""
+  accessModes:
+    - ReadOnlyMany
+  resources:
+    requests:
+      storage: {{ .Values.nfsMount.size }}
+{{- end }}

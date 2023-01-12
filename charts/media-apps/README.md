@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.2](https://img.shields.io/badge/AppVersion-0.1.2-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.0](https://img.shields.io/badge/AppVersion-0.3.0-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -26,26 +26,53 @@ Argo CD app-of-apps config for media applications
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| calibre | object | [example](./examples/calibre.yaml) | [calibre](https://github.com/kovidgoyal/calibre) |
+| calibre.chart | string | `"calibre"` | Chart |
+| calibre.destination.namespace | string | `"media-apps"` | Namespace |
+| calibre.enabled | bool | `false` | Enable calibre |
+| calibre.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
+| calibre.targetRevision | string | `"5.*"` | [calibre Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre) |
+| calibre.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre/values.yaml) | Helm values |
+| calibreweb | object | [example](./examples/calibreweb.yaml) | [calibreweb](https://github.com/janeczku/calibre-web) |
+| calibreweb.chart | string | `"calibre-web"` | Chart |
+| calibreweb.destination.namespace | string | `"media-apps"` | Namespace |
+| calibreweb.enabled | bool | `false` | Enable calibreweb |
+| calibreweb.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
+| calibreweb.targetRevision | string | `"8.*"` | [calibreweb Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre-web) |
+| calibreweb.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre-web/values.yaml) | Helm values |
 | jackett.chart | string | `"jackett"` | Chart |
 | jackett.destination.namespace | string | `"media-apps"` | Namespace |
 | jackett.enabled | bool | `false` | Enable Jackett |
 | jackett.name | string | `"jackett"` |  |
 | jackett.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| jackett.targetRevision | string | `"11.4.*"` | [jackett Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett) |
+| jackett.targetRevision | string | `"11.*"` | [jackett Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett) |
 | jackett.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/jackett/values.yaml) | Helm values |
+| nfsMount | object | `{"destination":{"namespace":"media-apps"},"enabled":false,"name":"nas-media","nfsPath":"/mnt/data01/media","server":"1.2.3.4","size":"10Gi"}` | This is used to create a PVC for a media share via NFS |
+| nfsMount.destination.namespace | string | `"media-apps"` | Namespace |
+| nfsMount.enabled | bool | `false` | Enable nfsMount |
+| nfsMount.name | string | `"nas-media"` | Name |
+| nfsMount.server | string | `"1.2.3.4"` | NFS Server |
+| nfsMount.size | string | `"10Gi"` | Size of NFS mount |
+| prowlarr | object | [example](./examples/prowlarr.yaml) | [Prowlarr](https://github.com/Prowlarr/Prowlarr) |
+| prowlarr.chart | string | `"prowlarr"` | Chart |
+| prowlarr.destination.namespace | string | `"media-apps"` | Namespace |
+| prowlarr.enabled | bool | `false` | Enable Prowlarr |
+| prowlarr.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
+| prowlarr.targetRevision | string | `"4.*"` | [prowlarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr) |
+| prowlarr.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/prowlarr/values.yaml) | Helm values |
 | radarr | object | [example](./examples/radarr.yaml) | [Radarr](https://radarr.video/) |
 | radarr.chart | string | `"radarr"` | Chart |
 | radarr.destination.namespace | string | `"media-apps"` | Namespace |
 | radarr.enabled | bool | `false` | Enable Radarr |
 | radarr.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| radarr.targetRevision | string | `"16.1.*"` | [radarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr) |
+| radarr.targetRevision | string | `"16.*"` | [radarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr) |
 | radarr.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/radarr/values.yaml) | Helm values |
 | sonarr | object | [example](./examples/sonarr.yaml) | [Sonarr](https://sonarr.tv/) |
 | sonarr.chart | string | `"sonarr"` | Chart |
 | sonarr.destination.namespace | string | `"media-apps"` | Namespace |
 | sonarr.enabled | bool | `false` | Enable Sonarr |
 | sonarr.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| sonarr.targetRevision | string | `"16.1.*"` | [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr) |
+| sonarr.targetRevision | string | `"16.*"` | [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr) |
 | sonarr.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/sonarr/values.yaml) | Helm values |
 
 ----------------------------------------------

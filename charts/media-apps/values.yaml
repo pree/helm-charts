@@ -1,3 +1,19 @@
+# nfsMount -- This is used to create a PVC for a media share via NFS
+nfsMount:
+  # nfsMount.enabled -- Enable nfsMount
+  enabled: false
+  # nfsMount.name -- Name
+  name: "nas-media"
+  # nfsMount.server -- NFS Server
+  server: 1.2.3.4
+  # nfsMount.path -- NFS path
+  nfsPath: /mnt/data01/media
+  # nfsMount.size -- Size of NFS mount
+  size: "10Gi"
+  destination:
+    # nfsMount.destination.namespace -- Namespace
+    namespace: "media-apps" 
+
 # sonarr -- [Sonarr](https://sonarr.tv/)
 # @default -- [example](./examples/sonarr.yaml)
 sonarr:
