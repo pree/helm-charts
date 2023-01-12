@@ -2,17 +2,20 @@
 nfsMount:
   # nfsMount.enabled -- Enable nfsMount
   enabled: false
-  # nfsMount.name -- Name
   name: "nas-media"
-  # nfsMount.server -- NFS Server
-  server: 1.2.3.4
-  # nfsMount.path -- NFS path
-  nfsPath: /mnt/data01/media
-  # nfsMount.size -- Size of NFS mount
-  size: "10Gi"
   destination:
     # nfsMount.destination.namespace -- Namespace
-    namespace: "media-apps" 
+    namespace: "media-apps"
+  # nfsMount.repoURL -- Repo URL
+  # @default -- [repo](https://git.reeb.io/pree/helm-charts)
+  repoURL: "https://charts.pree.dev"
+  # nfsMount.chart -- Chart
+  chart: "nfs-mount"
+  # nfsMount.targetRevision -- [nfsMount Helm chart](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount)
+  targetRevision: "0.1.*"
+  # nfsMount.values -- Helm values
+  # @default -- [upstream values](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/values.yaml)
+  values: {}
 
 # sonarr -- [Sonarr](https://sonarr.tv/)
 # @default -- [example](./examples/sonarr.yaml)
