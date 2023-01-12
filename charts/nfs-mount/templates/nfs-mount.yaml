@@ -9,14 +9,13 @@ spec:
   capacity:
     storage: "16Ti"
   nfs:
-    path: {{ .Values.nfsMount.path }}
-    server: {{ .Values.nfsMount.server }}
+    path: {{ .Values.path }}
+    server: {{ .Values.server }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: {{ .Release.Name }}
-  namespace: {{ .Values.nfsMount.destination.namespace }}
 spec:
   volumeName: {{ .Release.Name }}
   storageClassName: ""
@@ -24,4 +23,4 @@ spec:
     - ReadOnlyMany
   resources:
     requests:
-      storage: {{ .Values.nfsMount.size }}
+      storage: {{ .Values.size }}
