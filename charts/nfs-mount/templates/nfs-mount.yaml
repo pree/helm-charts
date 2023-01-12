@@ -5,9 +5,9 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteOnce
   capacity:
-    storage: "16Ti"
+    storage: {{ .Values.size }}
   nfs:
     path: {{ .Values.path }}
     server: {{ .Values.server }}
@@ -20,7 +20,7 @@ spec:
   volumeName: {{ .Release.Name }}
   storageClassName: ""
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: {{ .Values.size }}
