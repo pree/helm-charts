@@ -1,4 +1,4 @@
-{{- $volume := include "nfs-mount.fullname" }}
+{{- $volume := (include "nfs-mount.fullname" .) }}
 ---
 apiVersion: v1
 kind: PersistentVolume

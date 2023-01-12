@@ -2,8 +2,8 @@ apiVersion: v2
 name: nfs-mount
 home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/README.md
 description: NFS mount to access already present data
-version: 0.1.4
-appVersion: 0.1.4
+version: 0.1.5
+appVersion: 0.1.5
 maintainers:
   - name: Pascal Reeb (pree)
     email: "pascal@reeb.io"
