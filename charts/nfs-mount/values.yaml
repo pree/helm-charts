@@ -5,3 +5,4 @@ path: /mnt/data01/media
 # size -- NFS share size
 size: "10Gi"
 # volumeName -- PersistentVolume Name
+volumeName: "nfs-mount"
