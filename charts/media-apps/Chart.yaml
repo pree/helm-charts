@@ -3,8 +3,8 @@ name: media-apps
 description: Argo CD app-of-apps config for media applications
 type: application
 # version and appVersion are in sync in this chart!
-version: 0.3.7
-appVersion: 0.3.7
+version: 0.3.8
+appVersion: 0.3.8
 home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/media-apps
 sources:
   - https://git.reeb.io/pree/helm-charts
@@ -13,7 +13,7 @@ maintainers:
     email: pascal@reeb.io
 dependencies:
   - name: argoconfig
-    version: 0.7.2
+    version: 0.9.0
     repository: https://charts.adfinis.com
 annotations:
   artifacthub.io/changes: |
