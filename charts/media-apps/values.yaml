@@ -28,11 +28,11 @@ sonarr:
     namespace: "media-apps"
   # sonarr.repoURL -- Repo URL
   # @default -- [repo](https://github.com/k8s-at-home/charts)
-  repoURL: "https://k8s-at-home.com/charts"
+  repoURL: "https://charts.pree.dev"
   # sonarr.chart -- Chart
   chart: "sonarr"
   # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr)
-  targetRevision: "16.*"
+  targetRevision: "1.0.0"
   # sonarr.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/sonarr/values.yaml)
   values: {}
