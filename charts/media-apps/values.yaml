@@ -27,14 +27,14 @@ sonarr:
     # sonarr.destination.namespace -- Namespace
     namespace: "media-apps"
   # sonarr.repoURL -- Repo URL
-  # @default -- [repo](https://github.com/k8s-at-home/charts)
+  # @default -- [repo](https://github.com/pree/helm-charts)
   repoURL: "https://charts.pree.dev"
   # sonarr.chart -- Chart
   chart: "sonarr"
-  # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/sonarr)
-  targetRevision: "1.0.2"
+  # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr)
+  targetRevision: "1.0.3"
   # sonarr.values -- Helm values
-  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/sonarr/values.yaml)
+  # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml)
   values: {}
 
 # radarr -- [Radarr](https://radarr.video/)
@@ -47,14 +47,14 @@ radarr:
     # radarr.destination.namespace -- Namespace
     namespace: "media-apps"
   # radarr.repoURL -- Repo URL
-  # @default -- [repo](https://github.com/k8s-at-home/charts)
-  repoURL: "https://k8s-at-home.com/charts"
+  # @default -- [repo](https://github.com/pree/helm-charts)
+  repoURL: "https://charts.pree.dev"
   # radarr.chart -- Chart
   chart: "radarr"
-  # radarr.targetRevision -- [radarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/radarr)
-  targetRevision: "16.*"
+  # radarr.targetRevision -- [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr)
+  targetRevision: "1.0.0"
   # radarr.values -- Helm values
-  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/radarr/values.yaml)
+  # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml)
   values: {}
 
 # jakett -- [Jakett](https://github.com/Jackett/Jackett)

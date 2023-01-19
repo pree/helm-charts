@@ -1,0 +1,27 @@
+apiVersion: v2
+name: radarr
+description: A fork of Sonarr to work with movies à la Couchpotato
+type: application
+version: 1.0.0
+appVersion: "4.3.2.6857"
+keywords:
+  - radarr
+  - servarr
+  - torrent
+  - usenet
+home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+sources:
+  - https://github.com/Radarr/Radarr
+  - https://github.com/onedr0p/containers
+maintainers:
+  - name: pree
+    email: pascal@reeb.io
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 1.2.1
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initialize radarr chart
