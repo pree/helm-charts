@@ -2,7 +2,7 @@ apiVersion: v2
 name: sonarr
 description: Smart PVR for newsgroup and bittorrent users
 type: application
-version: 1.0.2
+version: 1.0.3
 appVersion: "3.0.9.1549"
 keywords:
   - sonarr
@@ -10,10 +10,10 @@ keywords:
   - torrent
   - usenet
 home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
-icon: https://raw.githubusercontent.com/Sonarr/Sonarr/phantom-develop/Logo/512.png
+icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
 sources:
   - https://github.com/Sonarr/Sonarr
-  - https://fleet.linuxserver.io/
+  - https://github.com/onedr0p/containers
 maintainers:
   - name: pree
     email: pascal@reeb.io
@@ -23,5 +23,5 @@ dependencies:
     version: 1.2.1
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initialize sonarr chart
+    - kind: changed
+      description: changed logo url
