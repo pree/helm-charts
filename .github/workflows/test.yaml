@@ -16,6 +16,11 @@ jobs:
         with:
           version: v3.10.0
 
+      - name: Install dependencies
+        run: |
+          helm repo add adfinis https://charts.adfinis.com
+          helm repo add bjw-s https://bjw-s.github.io/helm-charts/
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
