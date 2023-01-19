@@ -18,6 +18,8 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
+  PUID: 1000
+  PGID: 1000
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
