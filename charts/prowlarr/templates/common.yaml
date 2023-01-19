@@ -2,7 +2,7 @@
 {{- include "bjw-s.common.loader.init" . }}
 
 {{/* Append the hardcoded settings */}}
-{{- define "radarr.harcodedValues" -}}
+{{- define "prowlarr.harcodedValues" -}}
 {{ if .Values.metrics.enabled }}
 additionalContainers:
   exporter:
