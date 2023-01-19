@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.6](https://img.shields.io/badge/AppVersion-0.3.6-informational?style=flat-square)
+![Version: 0.3.7](https://img.shields.io/badge/Version-0.3.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.7](https://img.shields.io/badge/AppVersion-0.3.7-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -58,9 +58,9 @@ Argo CD app-of-apps config for media applications
 | prowlarr.chart | string | `"prowlarr"` | Chart |
 | prowlarr.destination.namespace | string | `"media-apps"` | Namespace |
 | prowlarr.enabled | bool | `false` | Enable Prowlarr |
-| prowlarr.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| prowlarr.targetRevision | string | `"4.*"` | [prowlarr Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/prowlarr) |
-| prowlarr.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/prowlarr/values.yaml) | Helm values |
+| prowlarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
+| prowlarr.targetRevision | string | `"1.0.0"` | [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr) |
+| prowlarr.values | object | [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml) | Helm values |
 | radarr | object | [example](./examples/radarr.yaml) | [Radarr](https://radarr.video/) |
 | radarr.chart | string | `"radarr"` | Chart |
 | radarr.destination.namespace | string | `"media-apps"` | Namespace |
