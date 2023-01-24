@@ -1,6 +1,6 @@
 # ha-apps
 
-![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.3](https://img.shields.io/badge/AppVersion-0.2.3-informational?style=flat-square)
+![Version: 0.2.4](https://img.shields.io/badge/Version-0.2.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.4](https://img.shields.io/badge/AppVersion-0.2.4-informational?style=flat-square)
 
 Argo CD app-of-apps config for home automation applications
 
@@ -30,9 +30,9 @@ Argo CD app-of-apps config for home automation applications
 | homeassistant.chart | string | `"home-assistant"` | Chart |
 | homeassistant.destination.namespace | string | `"ha-apps"` | Namespace |
 | homeassistant.enabled | bool | `false` | Enable Home Assistant |
-| homeassistant.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| homeassistant.targetRevision | string | `"13.*"` | [Home Assistant Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant) |
-| homeassistant.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/home-assistant/values.yaml) | Helm values |
+| homeassistant.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
+| homeassistant.targetRevision | string | `"1.0.0"` | [Home Assistant Helm chart](https://github.com/pree/helm-charts/tree/master/charts/home-assistant) |
+| homeassistant.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/home-assistant/values.yaml) | Helm values |
 | mosquitto | object | [example](./examples/mosquitto.yaml) | [Mosquitto](https://mosquitto.org/) |
 | mosquitto.chart | string | `"mosquitto"` | Chart |
 | mosquitto.destination.namespace | string | `"ha-apps"` | Namespace |

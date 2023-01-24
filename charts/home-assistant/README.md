@@ -48,7 +48,7 @@ Open source home automation that puts local control and privacy first
 | persistence.usb | object | See values.yaml | Configure a hostPathMount to mount a USB device in the container. |
 | postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
 | probes | object | See values.yaml | Configures the probes for the main Pod. |
-| securityContext.privileged | bool | `nil` | Privileged securityContext may be required if USB devices are accessed directly through the host machine |
+| securityContext.privileged | bool | `false` | (bool) Privileged securityContext may be required if USB devices are accessed directly through the host machine |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
