@@ -1,8 +1,8 @@
-{{ if .Values.home-assistant.enabled }}
-{{ template "argoconfig.application" (list . "ha-apps.home-assistant") }}
+{{ if .Values.homeassistant.enabled }}
+{{ template "argoconfig.application" (list . "ha-apps.homeassistant") }}
 {{ end }}
 
-{{- define "ha-apps.home-assistant" -}}{{- $app := unset .Values.home-assistant "enabled" -}}{{- $name := default $app.namespace $app.name -}}
+{{- define "ha-apps.homeassistant" -}}{{- $app := unset .Values.homeassistant "enabled" -}}{{- $name := default $app.namespace $app.name -}}
 metadata:
   name: {{ template "common.fullname" . }}-{{ $name }}
 spec:

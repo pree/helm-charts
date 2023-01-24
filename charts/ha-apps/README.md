@@ -1,6 +1,6 @@
 # ha-apps
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.0](https://img.shields.io/badge/AppVersion-0.3.0-informational?style=flat-square)
+![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.1](https://img.shields.io/badge/AppVersion-0.3.1-informational?style=flat-square)
 
 Argo CD app-of-apps config for home automation applications
 
@@ -26,13 +26,13 @@ Argo CD app-of-apps config for home automation applications
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| home-assistant | object | [example](./examples/home-assistant.yaml) | [Home Asistant](https://home-assistant.io) |
-| home-assistant.chart | string | `"home-assistant"` | Chart |
-| home-assistant.destination.namespace | string | `"ha-apps"` | Namespace |
-| home-assistant.enabled | bool | `false` | Enable Home Assistant |
-| home-assistant.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| home-assistant.targetRevision | string | `"1.0.2"` | [Home Assistant Helm chart](https://github.com/pree/helm-charts/tree/master/charts/home-assistant) |
-| home-assistant.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/home-assistant/values.yaml) | Helm values |
+| homeassistant | object | [example](./examples/homeassistant.yaml) | [Home Asistant](https://home-assistant.io) |
+| homeassistant.chart | string | `"home-assistant"` | Chart |
+| homeassistant.destination.namespace | string | `"ha-apps"` | Namespace |
+| homeassistant.enabled | bool | `false` | Enable Home Assistant |
+| homeassistant.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
+| homeassistant.targetRevision | string | `"1.0.2"` | [Home Assistant Helm chart](https://github.com/pree/helm-charts/tree/master/charts/home-assistant) |
+| homeassistant.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/home-assistant/values.yaml) | Helm values |
 | mosquitto | object | [example](./examples/mosquitto.yaml) | [Mosquitto](https://mosquitto.org/) |
 | mosquitto.chart | string | `"mosquitto"` | Chart |
 | mosquitto.destination.namespace | string | `"ha-apps"` | Namespace |

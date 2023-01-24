@@ -1,20 +1,20 @@
-# home-assistant -- [Home Asistant](https://home-assistant.io)
-# @default -- [example](./examples/home-assistant.yaml)
-home-assistant:
-  # home-assistant.enabled -- Enable Home Assistant
+# homeassistant -- [Home Asistant](https://home-assistant.io)
+# @default -- [example](./examples/homeassistant.yaml)
+homeassistant:
+  # homeassistant.enabled -- Enable Home Assistant
   enabled: false
-  name: home-assistant
+  name: homeassistant
   destination:
-    # home-assistant.destination.namespace -- Namespace
+    # homeassistant.destination.namespace -- Namespace
     namespace: "ha-apps"
-  # home-assistant.repoURL -- Repo URL
+  # homeassistant.repoURL -- Repo URL
   # @default -- [repo](https://github.com/pree/helm-charts)
   repoURL: "https://charts.pree.dev"
-  # home-assistant.chart -- Chart
+  # homeassistant.chart -- Chart
   chart: "home-assistant"
-  # home-assistant.targetRevision -- [Home Assistant Helm chart](https://github.com/pree/helm-charts/tree/master/charts/home-assistant)
+  # homeassistant.targetRevision -- [Home Assistant Helm chart](https://github.com/pree/helm-charts/tree/master/charts/home-assistant)
   targetRevision: "1.0.2"
-  # home-assistant.values -- Helm values
+  # homeassistant.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/home-assistant/values.yaml)
   values: {}
 

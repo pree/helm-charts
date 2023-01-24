@@ -1,4 +1,4 @@
-home-assistant:
+homeassistant:
   enabled: true
   values:
     env:
