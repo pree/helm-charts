@@ -1,0 +1,38 @@
+apiVersion: v2
+name: home-assistant
+description: Open source home automation that puts local control and privacy first
+type: application
+version: 1.0.0
+appVersion: "2023.1.7"
+keywords:
+  - home-assistant
+  - hass
+  - homeassistant
+  - smarthome
+home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+icon: https://raw.githubusercontent.com/home-assistant/core/dev/docs/source/_static/logo.png
+sources:
+  - https://github.com/home-assistant/core
+maintainers:
+  - name: pree
+    email: pascal@reeb.io
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 1.2.1
+  - name: postgresql
+    version: 12.1.9
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+  - name: mariadb
+    version: 11.4.4
+    repository: https://charts.bitnami.com/bitnami
+    condition: mariadb.enabled
+  - name: influxdb
+    version: 5.4.14
+    repository: https://charts.bitnami.com/bitnami
+    condition: influxdb.enabled
+annotations:
+  artifacthub.io/changes: |
+    - kind: created
+      description: init chart
