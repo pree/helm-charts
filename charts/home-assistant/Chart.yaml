@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.0.0
+version: 1.0.1
 appVersion: "2023.1.7"
 keywords:
   - home-assistant
@@ -34,5 +34,5 @@ dependencies:
     condition: influxdb.enabled
 annotations:
   artifacthub.io/changes: |
-    - kind: created
-      description: init chart
+    - kind: added
+      description: init home-assistant chart
