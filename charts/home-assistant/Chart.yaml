@@ -34,10 +34,5 @@ dependencies:
     condition: influxdb.enabled
 annotations:
   artifacthub.io/changes: |
-<<<<<<< HEAD
-    - kind: added
-      description: init home-assistant chart
-=======
     - kind: changed
       description: updated postgresql to 15.1.0
->>>>>>> b0b0486 (chore(home-assistant): bump chart version)
