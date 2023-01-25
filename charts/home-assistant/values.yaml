@@ -151,13 +151,10 @@ postgresql:
   image:
     repository: bitnami/postgresql
     tag: 15.1.0
-  postgresqlUsername: home-assistant
-  postgresqlPassword: home-assistant-pass
-  postgresqlDatabase: home-assistant
-  persistence:
-    primary:
-      enabled: false
-      # storageClass: ""
+  auth:
+    username: home-assistant
+    password: home-assistant-pass
+    database: home-assistant
 
 # -- Enable and configure influxdb database subchart under this key.
 #    For more options see [influxdb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/influxdb)

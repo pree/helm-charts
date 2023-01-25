@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.0.2
+version: 1.0.3
 appVersion: "2023.1.7"
 keywords:
   - home-assistant
@@ -35,4 +35,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: updated postgresql to 15.1.0
+      description: updated postgresql variables
