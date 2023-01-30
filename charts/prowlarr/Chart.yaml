@@ -4,7 +4,7 @@ description: Prowlarr is an indexer manager/proxy built on the popular *arr .net
 type: application
 version: 1.0.2
 # renovate: image=ghcr.io/onedr0p/prowlarr-develop
-appVersion: "1.0.1.2220"
+appVersion: "1.1.1.2377"
 keywords:
   - prowlarr
   - servarr
