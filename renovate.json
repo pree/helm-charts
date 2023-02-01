@@ -6,12 +6,21 @@
     "assignees": ["pree"],
     "bumpVersion": "patch",
     "regexManagers": [{
-        "datasourceTemplate": "docker",
-        "fileMatch": ["(^|/)Chart\\.yaml$"],
-        "matchStrings": [
-            "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
-        ]
-    }],
+            "datasourceTemplate": "docker",
+            "fileMatch": ["(^|/)Chart\\.yaml$"],
+            "matchStrings": [
+                "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
+            ]
+        },
+        {
+            "description": "Update _VERSION variables in shell scripts",
+            "fileMatch": ["\\.sh$"],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\s[A-Z_]+?_VERSION=(?<currentValue>.+?)\\s"
+            ],
+            "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
+        }
+    ],
     "packageRules": [{
         "description": "Trim leading v from version for helm-docs",
         "matchPackageNames": ["helm-docs"],
