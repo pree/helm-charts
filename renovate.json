@@ -3,11 +3,17 @@
     "extends": [
         "config:base"
     ],
+    "assignees": ["pree"],
     "regexManagers": [{
         "datasourceTemplate": "docker",
         "fileMatch": ["(^|/)Chart\\.yaml$"],
         "matchStrings": [
             "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
         ]
+    }],
+    "packageRules": [{
+        "description": "Trim leading v from version for helm-docs",
+        "matchPackageNames": ["helm-docs"],
+        "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
     }]
 }
