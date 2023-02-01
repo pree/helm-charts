@@ -4,6 +4,7 @@
         "config:base"
     ],
     "assignees": ["pree"],
+    "bumpVersion": "patch",
     "regexManagers": [{
         "datasourceTemplate": "docker",
         "fileMatch": ["(^|/)Chart\\.yaml$"],
