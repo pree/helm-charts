@@ -25,5 +25,10 @@
         "description": "Trim leading v from version for helm-docs",
         "matchPackageNames": ["helm-docs"],
         "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
-    }]
+    }],
+    "postUpgradeTasks": {
+        "commands": ["helm-docs"],
+        "fileFilters": ["README.md"],
+        "executionMode": "update"
+    }
 }
