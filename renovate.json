@@ -28,7 +28,7 @@
     }],
     "postUpgradeTasks": {
         "commands": ["helm-docs"],
-        "fileFilters": ["README.md"],
+        "fileFilters": ["*/README.md"],
         "executionMode": "update"
     }
 }
