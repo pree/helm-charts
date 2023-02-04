@@ -27,7 +27,7 @@
         "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
     }],
     "postUpgradeTasks": {
-        "commands": ["helm-docs"],
+        "commands": ["bump-version", "helm-docs"],
         "fileFilters": ["charts/*/README.md"],
         "executionMode": "update"
     }
