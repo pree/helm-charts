@@ -27,7 +27,7 @@
     }],
     "postUpgradeTasks": {
         "commands": ["bump-chart", "helm-docs"],
-        "fileFilters": ["charts/*/README.md"],
+        "fileFilters": ["charts/*/Chart.yaml", "charts/*/README.md"],
         "executionMode": "update"
     }
 }
