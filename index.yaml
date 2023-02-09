@@ -7,6 +7,48 @@ entries:
           description: renovate config
     apiVersion: v2
     appVersion: 2023.2.3
+    created: "2023-02-09T21:01:01.778779057Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.3.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.15
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.6
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.4.15
+    description: Open source home automation that puts local control and privacy first
+    digest: bdf6acca7ef0d6c6f365a2dd412cb0cd0350a398291e7f757e4f8fb53e1ef830
+    home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+    icon: https://raw.githubusercontent.com/home-assistant/core/dev/docs/source/_static/logo.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    - smarthome
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/home-assistant-1.2.1/home-assistant-1.2.1.tgz
+    version: 1.2.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: renovate config
+    apiVersion: v2
+    appVersion: 2023.2.3
     created: "2023-02-08T23:07:19.034561795Z"
     dependencies:
     - name: common
@@ -76,4 +118,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/prowlarr-1.1.0/prowlarr-1.1.0.tgz
     version: 1.1.0
-generated: "2023-02-08T23:07:19.034571895Z"
+generated: "2023-02-09T21:01:01.778792657Z"
