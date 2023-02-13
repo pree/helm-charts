@@ -12,7 +12,7 @@ nfsMount:
   # nfsMount.chart -- Chart
   chart: "nfs-mount"
   # nfsMount.targetRevision -- [nfsMount Helm chart](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount)
-  targetRevision: "0.1.*"
+  targetRevision: "0.1.10"
   # nfsMount.values -- Helm values
   # @default -- [upstream values](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/values.yaml)
   values: {}
@@ -32,7 +32,7 @@ sonarr:
   # sonarr.chart -- Chart
   chart: "sonarr"
   # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr)
-  targetRevision: "1.0.3"
+  targetRevision: "1.0.9"
   # sonarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml)
   values: {}
@@ -52,29 +52,9 @@ radarr:
   # radarr.chart -- Chart
   chart: "radarr"
   # radarr.targetRevision -- [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr)
-  targetRevision: "1.0.0"
+  targetRevision: "1.0.6"
   # radarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml)
-  values: {}
-
-# jakett -- [Jakett](https://github.com/Jackett/Jackett)
-# @default -- [example](./examples/jackett.yaml)
-jackett:
-  # jackett.enabled -- Enable Jackett
-  enabled: false
-  name: jackett
-  destination:
-    # jackett.destination.namespace -- Namespace
-    namespace: "media-apps"
-  # jackett.repoURL -- Repo URL
-  # @default -- [repo](https://github.com/k8s-at-home/charts)
-  repoURL: "https://k8s-at-home.com/charts"
-  # jackett.chart -- Chart
-  chart: "jackett"
-  # jackett.targetRevision -- [jackett Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/jackett)
-  targetRevision: "11.*"
-  # jackett.values -- Helm values
-  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/jackett/values.yaml)
   values: {}
 
 # prowlarr -- [Prowlarr](https://github.com/Prowlarr/Prowlarr)
@@ -92,47 +72,7 @@ prowlarr:
   # prowlarr.chart -- Chart
   chart: "prowlarr"
   # prowlarr.targetRevision -- [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr)
-  targetRevision: "1.0.0"
+  targetRevision: "1.1.1"
   # prowlarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml)
-  values: {}
-
-# calibre -- [calibre](https://github.com/kovidgoyal/calibre)
-# @default -- [example](./examples/calibre.yaml)
-calibre:
-  # calibre.enabled -- Enable calibre
-  enabled: false
-  name: calibre
-  destination:
-    # calibre.destination.namespace -- Namespace
-    namespace: "media-apps"
-  # calibre.repoURL -- Repo URL
-  # @default -- [repo](https://github.com/k8s-at-home/charts)
-  repoURL: "https://k8s-at-home.com/charts"
-  # calibre.chart -- Chart
-  chart: "calibre"
-  # calibre.targetRevision -- [calibre Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre)
-  targetRevision: "5.*"
-  # calibre.values -- Helm values
-  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre/values.yaml)
-  values: {}
-
-# calibreweb -- [calibreweb](https://github.com/janeczku/calibre-web)
-# @default -- [example](./examples/calibreweb.yaml)
-calibreweb:
-  # calibreweb.enabled -- Enable calibreweb
-  enabled: false
-  name: calibreweb
-  destination:
-    # calibreweb.destination.namespace -- Namespace
-    namespace: "media-apps"
-  # calibreweb.repoURL -- Repo URL
-  # @default -- [repo](https://github.com/k8s-at-home/charts)
-  repoURL: "https://k8s-at-home.com/charts"
-  # calibreweb.chart -- Chart
-  chart: "calibre-web"
-  # calibreweb.targetRevision -- [calibreweb Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/calibre-web)
-  targetRevision: "8.*"
-  # calibreweb.values -- Helm values
-  # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/calibre-web/values.yaml)
   values: {}
