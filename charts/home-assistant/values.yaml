@@ -148,9 +148,6 @@ mariadb:
 # @default -- See values.yaml
 postgresql:
   enabled: false
-  image:
-    repository: bitnami/postgresql
-    tag: 15.1.0
   auth:
     username: home-assistant
     password: home-assistant-pass
