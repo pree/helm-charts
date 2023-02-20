@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.3.13](https://img.shields.io/badge/Version-0.3.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.13](https://img.shields.io/badge/AppVersion-0.3.13-informational?style=flat-square)
+![Version: 0.3.14](https://img.shields.io/badge/Version-0.3.14-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.14](https://img.shields.io/badge/AppVersion-0.3.14-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -52,7 +52,7 @@ Argo CD app-of-apps config for media applications
 | sonarr.destination.namespace | string | `"media-apps"` | Namespace |
 | sonarr.enabled | bool | `false` | Enable Sonarr |
 | sonarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| sonarr.targetRevision | string | `"1.0.9"` | [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr) |
+| sonarr.targetRevision | string | `"1.0.10"` | [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr) |
 | sonarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml) | Helm values |
 
 ----------------------------------------------
