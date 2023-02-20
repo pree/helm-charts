@@ -1,6 +1,6 @@
 # ha-apps
 
-![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.5](https://img.shields.io/badge/AppVersion-0.3.5-informational?style=flat-square)
+![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.6](https://img.shields.io/badge/AppVersion-0.3.6-informational?style=flat-square)
 
 Argo CD app-of-apps config for home automation applications
 
@@ -38,7 +38,7 @@ Argo CD app-of-apps config for home automation applications
 | mosquitto.destination.namespace | string | `"ha-apps"` | Namespace |
 | mosquitto.enabled | bool | `false` | Enable Mosquitto |
 | mosquitto.repoURL | string | [repo](https://github.com/k8s-at-home/charts) | Repo URL |
-| mosquitto.targetRevision | string | `"4.*"` | [mosquitto Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto) |
+| mosquitto.targetRevision | string | `"4.8.2"` | [mosquitto Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto) |
 | mosquitto.values | object | [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/mosquitto/values.yaml) | Helm values |
 
 ----------------------------------------------

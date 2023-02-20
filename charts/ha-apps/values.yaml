@@ -33,7 +33,7 @@ mosquitto:
   # mosquitto.chart -- Chart
   chart: "mosquitto"
   # mosquitto.targetRevision -- [mosquitto Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/mosquitto)
-  targetRevision: "4.*"
+  targetRevision: "4.8.2"
   # mosquitto.values -- Helm values
   # @default -- [upstream values](https://github.com/k8s-at-home/charts/blob/master/charts/stable/mosquitto/values.yaml)
   values: {}

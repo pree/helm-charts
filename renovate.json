@@ -12,6 +12,13 @@
             ]
         },
         {
+            "datasourceTemplate": "helm",
+            "fileMatch": ["(^|/)values\\.yaml$"],
+            "matchStrings": [
+                "repoURL: \"(?<registryUrl>.*?)\"\\s.*\\s*chart: \"(?<depName>.*?)\"\\s.*\\s*targetRevision: \"(?<currentValue>[\\w+\\.\\-]*)\""
+            ]
+        },
+        {
             "description": "Update _VERSION variables in shell scripts",
             "fileMatch": ["\\.sh$"],
             "matchStrings": [
