@@ -1207,6 +1207,33 @@ entries:
     version: 1.0.6
   sonarr:
   - apiVersion: v2
+    appVersion: 3.0.10.1567
+    created: "2023-03-16T10:21:15.33148099Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.3.2
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 6f0b6cb8684ed371f8fc710799f0430a5afbfafab0f1170ff6acaa1d4775b1ad
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.1.0/sonarr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 3.0.9.1549
     created: "2023-02-20T09:37:26.971997967Z"
     dependencies:
@@ -1260,4 +1287,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-03-16T10:20:59.33066857Z"
+generated: "2023-03-16T10:21:15.331566191Z"
