@@ -31,6 +31,9 @@
         "description": "Trim leading v from version for helm-docs",
         "matchPackageNames": ["helm-docs"],
         "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
+    }, {
+        "matchPackageNames": ["postgresql", "mariadb", "influxdb"],
+        "groupName": "database dependencies"
     }],
     "postUpgradeTasks": {
         "commands": ["bump-chart", "helm-docs"],
