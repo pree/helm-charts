@@ -32,7 +32,7 @@ sonarr:
   # sonarr.chart -- Chart
   chart: "sonarr"
   # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr)
-  targetRevision: "1.1.1"
+  targetRevision: "1.1.2"
   # sonarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml)
   values: {}
