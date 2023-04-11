@@ -37,7 +37,7 @@
     }, {
         "matchPackageNames": ["radarr", "sonarr", "prowlarr"],
         "groupName": "servarr apps",
-        "matchDatasources": ["regex"]
+        "matchManagers": ["regex"]
     }],
     "postUpgradeTasks": {
         "commands": ["bump-chart", "helm-docs"],
