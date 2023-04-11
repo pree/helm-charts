@@ -34,6 +34,10 @@
     }, {
         "matchPackageNames": ["postgresql", "mariadb", "influxdb"],
         "groupName": "database dependencies"
+    }, {
+        "matchPackageNames": ["radarr", "sonarr", "prowlarr"],
+        "groupName": "servarr apps",
+        "matchDatasources": ["regex"]
     }],
     "postUpgradeTasks": {
         "commands": ["bump-chart", "helm-docs"],
