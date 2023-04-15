@@ -2372,6 +2372,33 @@ entries:
     version: 1.1.0
   radarr:
   - apiVersion: v2
+    appVersion: 4.4.4.7068
+    created: "2023-04-15T15:16:05.338489901Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.4.0
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 56be68f6829c1c7de9b3c59646950edba2dedfb8b378ac216bb26f067aede18e
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.1.0/radarr-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 4.3.2.6857
     created: "2023-04-14T16:00:31.003605431Z"
     dependencies:
@@ -2723,4 +2750,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-04-15T14:32:54.347366518Z"
+generated: "2023-04-15T15:16:05.338735002Z"
