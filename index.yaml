@@ -2405,6 +2405,34 @@ entries:
     version: 0.1.10
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.4.1.3258
+    created: "2023-05-08T13:50:49.443162308Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: c6470e58976eb0fc569865c65d835e9c737b36b8264630351f5f90c5ca535c74
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.8.0/prowlarr-1.8.0.tgz
+    version: 1.8.0
+  - apiVersion: v2
     appVersion: 1.4.0.3230
     created: "2023-05-08T10:51:38.797863327Z"
     dependencies:
@@ -3262,4 +3290,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-05-08T13:50:39.466540611Z"
+generated: "2023-05-08T13:50:49.443507711Z"
