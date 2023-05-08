@@ -32,7 +32,7 @@ sonarr:
   # sonarr.chart -- Chart
   chart: "sonarr"
   # sonarr.targetRevision -- [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr)
-  targetRevision: "1.1.4"
+  targetRevision: "1.1.5"
   # sonarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml)
   values: {}
@@ -52,7 +52,7 @@ radarr:
   # radarr.chart -- Chart
   chart: "radarr"
   # radarr.targetRevision -- [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr)
-  targetRevision: "1.1.0"
+  targetRevision: "1.1.1"
   # radarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml)
   values: {}
@@ -72,7 +72,7 @@ prowlarr:
   # prowlarr.chart -- Chart
   chart: "prowlarr"
   # prowlarr.targetRevision -- [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr)
-  targetRevision: "1.7.0"
+  targetRevision: "1.8.0"
   # prowlarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml)
   values: {}
