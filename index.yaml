@@ -428,6 +428,48 @@ entries:
           description: remove postgresql version pinning
     apiVersion: v2
     appVersion: 2023.5.2
+    created: "2023-06-07T11:49:32.164791921Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.5.6
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.2.5
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.6.1
+    description: Open source home automation that puts local control and privacy first
+    digest: b0af3f1f1f6b71463efba164742f1ab97aaff81561e57753df4233e899391d0a
+    home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+    icon: https://raw.githubusercontent.com/home-assistant/core/dev/docs/source/_static/logo.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    - smarthome
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/home-assistant-1.16.1/home-assistant-1.16.1.tgz
+    version: 1.16.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: remove postgresql version pinning
+    apiVersion: v2
+    appVersion: 2023.5.2
     created: "2023-05-08T13:50:39.464783489Z"
     dependencies:
     - name: common
@@ -3334,4 +3376,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-05-08T15:02:05.837133516Z"
+generated: "2023-06-07T11:49:32.165190925Z"
