@@ -2600,6 +2600,34 @@ entries:
   prowlarr:
   - apiVersion: v2
     appVersion: 1.5.2.3484
+    created: "2023-06-10T15:04:53.146672381Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: a5d751a80fd83e963c2643a313176abf4f9b09d9d4aedd08473f215c2745e014
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.9.2/prowlarr-1.9.2.tgz
+    version: 1.9.2
+  - apiVersion: v2
+    appVersion: 1.5.2.3484
     created: "2023-06-08T07:56:14.201105504Z"
     dependencies:
     - name: common
@@ -3109,6 +3137,33 @@ entries:
   radarr:
   - apiVersion: v2
     appVersion: 4.5.2.7388
+    created: "2023-06-10T15:04:53.27369927Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 711963a59591aad90145ba676f4212b291fe76f207afcdf857b4d8d4c4c4247a
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.2.2/radarr-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
+    appVersion: 4.5.2.7388
     created: "2023-06-08T07:56:14.337529477Z"
     dependencies:
     - name: common
@@ -3407,6 +3462,33 @@ entries:
   sonarr:
   - apiVersion: v2
     appVersion: 3.0.10.1567
+    created: "2023-06-10T15:04:53.387638947Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 1c12ba827196932e72331fc84b56945a50411933641ffc7d7fee4d2916964ccc
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.1.8/sonarr-1.1.8.tgz
+    version: 1.1.8
+  - apiVersion: v2
+    appVersion: 3.0.10.1567
     created: "2023-06-08T07:56:14.495586208Z"
     dependencies:
     - name: common
@@ -3675,4 +3757,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-06-10T15:03:55.30495868Z"
+generated: "2023-06-10T15:04:53.388289952Z"
