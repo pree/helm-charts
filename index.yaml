@@ -2232,6 +2232,30 @@ entries:
         - kind: changed
           description: changed prowlarr to https://charts.pree.dev
     apiVersion: v2
+    appVersion: 0.3.33
+    created: "2023-06-15T07:56:28.402145062Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.0
+    description: Argo CD app-of-apps config for media applications
+    digest: 1ddf5d194f02c8e056d152ebdda5259e300a22849d2e545856b5f2eeab24f2e1
+    home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/media-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: media-apps
+    sources:
+    - https://git.reeb.io/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/media-apps-0.3.33/media-apps-0.3.33.tgz
+    version: 0.3.33
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: changed prowlarr to https://charts.pree.dev
+    apiVersion: v2
     appVersion: 0.3.32
     created: "2023-06-11T11:05:15.79475577Z"
     dependencies:
@@ -4039,4 +4063,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-06-15T07:55:48.567093351Z"
+generated: "2023-06-15T07:56:28.402437277Z"
