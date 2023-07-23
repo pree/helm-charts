@@ -2,6 +2,26 @@ apiVersion: v1
 entries:
   ha-apps:
   - apiVersion: v2
+    appVersion: 0.3.38
+    created: "2023-07-23T12:12:31.133248159Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.0
+    description: Argo CD app-of-apps config for home automation applications
+    digest: 9717f97512faad63f25818c31274e09aa0f2ee3dfa5d96f2e5f6b6a5b2267faa
+    home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/ha-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: ha-apps
+    sources:
+    - https://git.reeb.io/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/ha-apps-0.3.38/ha-apps-0.3.38.tgz
+    version: 0.3.38
+  - apiVersion: v2
     appVersion: 0.3.37
     created: "2023-07-23T11:33:16.384327183Z"
     dependencies:
@@ -4792,4 +4812,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-07-23T11:34:28.413117463Z"
+generated: "2023-07-23T12:12:31.133721559Z"
