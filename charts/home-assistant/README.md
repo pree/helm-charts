@@ -1,6 +1,6 @@
 # home-assistant
 
-![Version: 1.21.2](https://img.shields.io/badge/Version-1.21.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2023.7.1](https://img.shields.io/badge/AppVersion-2023.7.1-informational?style=flat-square)
+![Version: 1.21.3](https://img.shields.io/badge/Version-1.21.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2023.7.1](https://img.shields.io/badge/AppVersion-2023.7.1-informational?style=flat-square)
 
 Open source home automation that puts local control and privacy first
 
@@ -21,9 +21,9 @@ Open source home automation that puts local control and privacy first
 | Repository | Name | Version |
 |------------|------|---------|
 | https://bjw-s.github.io/helm-charts/ | common | 1.5.1 |
-| https://charts.bitnami.com/bitnami | influxdb | 5.7.1 |
-| https://charts.bitnami.com/bitnami | mariadb | 12.2.7 |
-| https://charts.bitnami.com/bitnami | postgresql | 12.6.4 |
+| https://charts.bitnami.com/bitnami | influxdb | 5.7.2 |
+| https://charts.bitnami.com/bitnami | mariadb | 12.2.8 |
+| https://charts.bitnami.com/bitnami | postgresql | 12.6.8 |
 
 ## Values
 
