@@ -2770,6 +2770,30 @@ entries:
         - kind: changed
           description: changed prowlarr to https://charts.pree.dev
     apiVersion: v2
+    appVersion: 0.3.37
+    created: "2023-08-14T06:52:23.67174187Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.0
+    description: Argo CD app-of-apps config for media applications
+    digest: ec3f232157acff7cfbdff53fb1a0ae582b346bd5098b88c07b494058deb32f80
+    home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/media-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: media-apps
+    sources:
+    - https://git.reeb.io/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/media-apps-0.3.37/media-apps-0.3.37.tgz
+    version: 0.3.37
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: changed prowlarr to https://charts.pree.dev
+    apiVersion: v2
     appVersion: 0.3.36
     created: "2023-07-09T17:37:21.131221782Z"
     dependencies:
@@ -4110,6 +4134,33 @@ entries:
     version: 1.1.0
   radarr:
   - apiVersion: v2
+    appVersion: 4.7.5.7809
+    created: "2023-08-14T06:52:23.868860715Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 3049b0c8ef49dfc77924b9b8e92d6460a5f79a605f3d7d8e6ae8088b1525b2c8
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.4.0/radarr-1.4.0.tgz
+    version: 1.4.0
+  - apiVersion: v2
     appVersion: 4.6.4.7568
     created: "2023-07-04T08:05:43.845206804Z"
     dependencies:
@@ -4812,4 +4863,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-07-23T12:12:31.133721559Z"
+generated: "2023-08-14T06:52:23.869506521Z"
