@@ -1,6 +1,6 @@
 # prowlarr
 
-![Version: 1.15.0](https://img.shields.io/badge/Version-1.15.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.2.3860](https://img.shields.io/badge/AppVersion-1.8.2.3860-informational?style=flat-square)
+![Version: 1.16.0](https://img.shields.io/badge/Version-1.16.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.3.3880](https://img.shields.io/badge/AppVersion-1.8.3.3880-informational?style=flat-square)
 
 Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 
