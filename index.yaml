@@ -647,6 +647,48 @@ entries:
         - kind: changed
           description: remove postgresql version pinning
     apiVersion: v2
+    appVersion: 2023.8.3
+    created: "2023-08-23T23:40:56.623122418Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.9.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.0
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.9.0
+    description: Open source home automation that puts local control and privacy first
+    digest: 4305b94f755a76278281a0884c6dca566773328d7ed197d97b3359521b550075
+    home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+    icon: https://raw.githubusercontent.com/home-assistant/core/dev/docs/source/_static/logo.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    - smarthome
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/home-assistant-1.24.0/home-assistant-1.24.0.tgz
+    version: 1.24.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: remove postgresql version pinning
+    apiVersion: v2
     appVersion: 2023.8.2
     created: "2023-08-23T22:47:19.886157329Z"
     dependencies:
@@ -3641,6 +3683,34 @@ entries:
     version: 0.1.10
   prowlarr:
   - apiVersion: v2
+    appVersion: 1.8.3.3880
+    created: "2023-08-23T23:40:56.73768013Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: e9459fbf870346a3189b22ef6fd6cf3148cab55aec23e6b8b6e0e93d0f77a3bc
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.16.0/prowlarr-1.16.0.tgz
+    version: 1.16.0
+  - apiVersion: v2
     appVersion: 1.8.2.3860
     created: "2023-08-14T06:52:29.557761245Z"
     dependencies:
@@ -5103,4 +5173,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-08-23T22:47:19.886653638Z"
+generated: "2023-08-23T23:40:56.738449236Z"
