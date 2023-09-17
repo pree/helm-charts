@@ -30,7 +30,7 @@ Book Manager and Automation (Sonarr for Ebooks)
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/readarr"` | image repository |
+| image.repository | string | `"ghcr.io/onedr0p/readarr-develop"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |
