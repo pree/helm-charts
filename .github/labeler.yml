@@ -6,3 +6,4 @@
 'chart: prowlarr': charts/prowlarr/*
 'chart: radarr': charts/radarr/*
 'chart: sonarr': charts/sonarr/*
+'chart: readarr': charts/readarr/*
