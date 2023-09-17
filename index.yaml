@@ -5340,6 +5340,34 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/radarr-1.0.6/radarr-1.0.6.tgz
     version: 1.0.6
+  readarr:
+  - apiVersion: v2
+    appVersion: 0.3.5.2217
+    created: "2023-09-17T16:55:27.66892578Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Book Manager and Automation (Sonarr for Ebooks)
+    digest: a5405346a87d776816564677146982668f9e81c69248c631684b5860711ebe58
+    home: https://github.com/pree/helm-charts/tree/master/charts/readarr
+    icon: https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png
+    keywords:
+    - readarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/readarr-1.0.0/readarr-1.0.0.tgz
+    version: 1.0.0
   sonarr:
   - apiVersion: v2
     appVersion: 3.0.10.1567
@@ -5665,4 +5693,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-09-17T16:53:18.621503305Z"
+generated: "2023-09-17T16:55:27.669309483Z"
