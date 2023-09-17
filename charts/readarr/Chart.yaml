@@ -1,0 +1,24 @@
+apiVersion: v2
+name: readarr
+description: Book Manager and Automation (Sonarr for Ebooks)
+type: application
+version: 1.0.0
+# renovate: image=ghcr.io/onedr0p/readarr-develop
+appVersion: "0.3.5.2217"
+keywords:
+  - readarr
+  - servarr
+  - torrent
+  - usenet
+home: https://github.com/pree/helm-charts/tree/master/charts/readarr
+icon: https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png
+sources:
+  - https://github.com/Readarr/Readarr
+  - https://github.com/onedr0p/containers
+maintainers:
+  - name: pree
+    email: pascal@reeb.io
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 1.5.1

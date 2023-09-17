@@ -1,0 +1,8 @@
+# Test exportarr
+persistence:
+  config:
+    enabled: true
+    type: emptyDir
+
+metrics:
+  enabled: true
