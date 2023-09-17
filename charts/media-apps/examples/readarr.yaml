@@ -1,0 +1,9 @@
+readarr:
+  enabled: true
+  values:
+    env:
+      TZ: "Europe/Berlin"
+    
+    persistence:
+      config:
+        enabled: true

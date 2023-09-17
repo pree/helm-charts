@@ -76,3 +76,23 @@ prowlarr:
   # prowlarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml)
   values: {}
+
+# readarr -- [Readarr](https://github.com/Readarr/Readarr)
+# @default -- [example](./example/readarr.yaml)
+readarr:
+  # readarr.enabled -- Enable Readarr
+  enabled: false
+  name: readarr
+  destination:
+    # readarr.destination.namespace -- Namespace
+    namespace: "media-apps"
+  # readarr.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/pree/helm-charts)
+  repoURL: "https://charts.pree.dev"
+  # readarr.chart -- Chart
+  chart: "readarr"
+  # readarr.targetRevision -- [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr)
+  targetRevision: "1.0.0"
+  # readarr.values -- Helm values
+  # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/readarr/values.yaml)
+  values: {}
