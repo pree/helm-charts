@@ -52,7 +52,7 @@ Argo CD app-of-apps config for media applications
 | readarr.destination.namespace | string | `"media-apps"` | Namespace |
 | readarr.enabled | bool | `false` | Enable Readarr |
 | readarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| readarr.targetRevision | string | `"1.0.0"` | [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr) |
+| readarr.targetRevision | string | `"1.1.0"` | [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr) |
 | readarr.values | object | [upstream values](https://github.com/pree/charts/blob/master/charts/readarr/values.yaml) | Helm values |
 | sonarr | object | [example](./examples/sonarr.yaml) | [Sonarr](https://sonarr.tv/) |
 | sonarr.chart | string | `"sonarr"` | Chart |
