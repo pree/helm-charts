@@ -2,3 +2,15 @@ The following apps are available:
 {{ if .Values.sonarr.enabled }}
 * Sonarr
 {{ end }}
+{{ if .Values.prowlarr.enabled }}
+* Prowlarr
+{{ end }}
+{{ if .Values.radarr.enabled }}
+* Radarr
+{{ end }}
+{{ if .Values.readarr.enabled }}
+* Readarr
+{{ end }}
+{{ if .Values.clusterplex.enabled }}
+* Clusterplex
+{{ end }}

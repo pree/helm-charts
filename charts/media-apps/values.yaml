@@ -96,3 +96,23 @@ readarr:
   # readarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/readarr/values.yaml)
   values: {}
+
+# clusterplex -- [Clusterplex](https://github.com/pabloromeo/clusterplex)
+# @default -- [example](./example/clusterplex.yaml)
+clusterplex:
+  # clusterplex.enabled -- Enable clusterplex
+  enabled: false
+  name: clusterplex
+  destination:
+    # clusterplex.destination.namespace -- Namespace
+    namespace: "media-apps"
+  # clusterplex.repoURL -- Repo URL
+  # @default -- [repo](https://github.com/pabloromeo/clusterplex)
+  repoURL: "http://pabloromeo.github.io/clusterplex"
+  # clusterplex.chart -- Chart
+  chart: "clusterplex"
+  # clusterplex.targetRevision -- [clusterplex Helm chart](https://github.com/pabloromeo/clusterplex/tree/master/charts/clusterplex)
+  targetRevision: "1.1.0"
+  # clusterplex.values -- Helm values
+  # @default -- [upstream values](https://github.com/pabloromeo/clusterplex/blob/master/charts/clusterplex/values.yaml)
+  values: {}
