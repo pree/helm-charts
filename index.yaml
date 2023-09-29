@@ -2,6 +2,26 @@ apiVersion: v1
 entries:
   ha-apps:
   - apiVersion: v2
+    appVersion: 0.3.46
+    created: "2023-09-29T21:07:46.232646393Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.0
+    description: Argo CD app-of-apps config for home automation applications
+    digest: bd30453c67caca5d9ea108e313929848db8076ae6ffe521a239ccb9d57050ba4
+    home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/ha-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: ha-apps
+    sources:
+    - https://git.reeb.io/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/ha-apps-0.3.46/ha-apps-0.3.46.tgz
+    version: 0.3.46
+  - apiVersion: v2
     appVersion: 0.3.45
     created: "2023-09-27T12:51:08.413507352Z"
     dependencies:
@@ -762,6 +782,48 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/ha-apps-0.3.5/ha-apps-0.3.5.tgz
     version: 0.3.5
   home-assistant:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: remove postgresql version pinning
+    apiVersion: v2
+    appVersion: 2023.9.3
+    created: "2023-09-29T21:07:46.50113604Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.0.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.3
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.9.3
+    description: Open source home automation that puts local control and privacy first
+    digest: f0e1cf49f68769a9f9430074eb4a8c351464f4a9db0bb47d5ab6da75a8ab04aa
+    home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+    icon: https://raw.githubusercontent.com/home-assistant/core/dev/docs/source/_static/logo.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    - smarthome
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/home-assistant-1.28.1/home-assistant-1.28.1.tgz
+    version: 1.28.1
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -3456,6 +3518,30 @@ entries:
         - kind: changed
           description: changed prowlarr to https://charts.pree.dev
     apiVersion: v2
+    appVersion: 0.4.2
+    created: "2023-09-29T21:07:46.695003634Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.0
+    description: Argo CD app-of-apps config for media applications
+    digest: 1869feefffa34868da097f50ed1db7a861ca5f9717c2fd0a4e7cc138b3803ce7
+    home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/media-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: media-apps
+    sources:
+    - https://git.reeb.io/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/media-apps-0.4.2/media-apps-0.4.2.tgz
+    version: 0.4.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: changed prowlarr to https://charts.pree.dev
+    apiVersion: v2
     appVersion: 0.4.1
     created: "2023-09-24T16:21:33.629110428Z"
     dependencies:
@@ -4245,6 +4331,19 @@ entries:
     version: 0.3.11
   nfs-mount:
   - apiVersion: v2
+    appVersion: 0.1.11
+    created: "2023-09-29T21:07:46.912397334Z"
+    description: NFS mount to access already present data
+    digest: 5496ef99af3fcd87dca6aa4d51852baac0ab051a3bd3d462bb5408f773c59162
+    home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/README.md
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: nfs-mount
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/nfs-mount-0.1.11/nfs-mount-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
     appVersion: 0.1.10
     created: "2023-02-13T16:03:56.088981041Z"
     description: NFS mount to access already present data
@@ -4258,6 +4357,34 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/nfs-mount-0.1.10/nfs-mount-0.1.10.tgz
     version: 0.1.10
   prowlarr:
+  - apiVersion: v2
+    appVersion: 1.9.1.3981
+    created: "2023-09-29T21:07:47.161512012Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: 51033ef715175dc030fae0299841e1e4f205243182027a0e7500323ee0af9c00
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.21.1/prowlarr-1.21.1.tgz
+    version: 1.21.1
   - apiVersion: v2
     appVersion: 1.9.1.3981
     created: "2023-09-24T14:23:29.996201923Z"
@@ -5189,6 +5316,33 @@ entries:
   radarr:
   - apiVersion: v2
     appVersion: 4.7.5.7809
+    created: "2023-09-29T21:07:47.391043518Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: c0be448b4ac46ab043b9b85547b313d68f28ce1bbcae4d9ce2d92a65b86d40d3
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.4.2/radarr-1.4.2.tgz
+    version: 1.4.2
+  - apiVersion: v2
+    appVersion: 4.7.5.7809
     created: "2023-09-17T17:04:44.497408419Z"
     dependencies:
     - name: common
@@ -5622,6 +5776,33 @@ entries:
   readarr:
   - apiVersion: v2
     appVersion: 0.3.6.2232
+    created: "2023-09-29T21:07:47.618012901Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Book Manager and Automation (Sonarr for Ebooks)
+    digest: 9b492abe0ea0e9ebbff5910d5c836a6ba77423dc808b965f7d880d1f9df81a18
+    home: https://github.com/pree/helm-charts/tree/master/charts/readarr
+    icon: https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png
+    keywords:
+    - readarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/readarr-1.1.1/readarr-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 0.3.6.2232
     created: "2023-09-24T14:26:20.362722129Z"
     dependencies:
     - name: common
@@ -5675,6 +5856,33 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/readarr-1.0.0/readarr-1.0.0.tgz
     version: 1.0.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 3.0.10.1567
+    created: "2023-09-29T21:07:47.823564898Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: c3084f8687a18c5bee77cf5fa2f2a7f40e2e05a0bc1c1138426125faaa46c37d
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.1.11/sonarr-1.1.11.tgz
+    version: 1.1.11
   - apiVersion: v2
     appVersion: 3.0.10.1567
     created: "2023-09-17T17:04:44.62011992Z"
@@ -6026,4 +6234,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-09-27T12:51:08.414040264Z"
+generated: "2023-09-29T21:07:47.825144012Z"
