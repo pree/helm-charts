@@ -35,7 +35,7 @@
         "matchPackageNames": ["postgresql", "mariadb", "influxdb"],
         "groupName": "database dependencies"
     }, {
-        "matchPackageNames": ["radarr", "sonarr", "prowlarr"],
+        "matchPackageNames": ["radarr", "sonarr", "prowlarr", "readarr"],
         "groupName": "servarr apps",
         "matchManagers": ["regex"]
     }],
