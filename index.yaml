@@ -4621,6 +4621,34 @@ entries:
   prowlarr:
   - apiVersion: v2
     appVersion: 1.9.3.4013
+    created: "2023-10-09T12:07:53.577864685Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: bc8f31298d0cab0c214088b04f242d20b0f70bc1d9cbf338b13010dc64011a05
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.22.1/prowlarr-1.22.1.tgz
+    version: 1.22.1
+  - apiVersion: v2
+    appVersion: 1.9.3.4013
     created: "2023-10-09T08:52:38.558999275Z"
     dependencies:
     - name: common
@@ -5606,6 +5634,33 @@ entries:
   radarr:
   - apiVersion: v2
     appVersion: 4.7.5.7809
+    created: "2023-10-09T12:07:53.74546755Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 15db59f9c7806ea28e6f465e73df9725545e49328e57af7418fe0ac652022248
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.4.3/radarr-1.4.3.tgz
+    version: 1.4.3
+  - apiVersion: v2
+    appVersion: 4.7.5.7809
     created: "2023-09-29T21:07:47.391043518Z"
     dependencies:
     - name: common
@@ -6066,6 +6121,33 @@ entries:
   readarr:
   - apiVersion: v2
     appVersion: 0.3.6.2232
+    created: "2023-10-09T12:07:53.921947014Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Book Manager and Automation (Sonarr for Ebooks)
+    digest: 4b06291c8189235e1022c08c0d79bffb9dfb22b93207dd12d5e58f3c7ce95b32
+    home: https://github.com/pree/helm-charts/tree/master/charts/readarr
+    icon: https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png
+    keywords:
+    - readarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/readarr-1.1.2/readarr-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
+    appVersion: 0.3.6.2232
     created: "2023-09-29T21:07:47.618012901Z"
     dependencies:
     - name: common
@@ -6146,6 +6228,33 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/readarr-1.0.0/readarr-1.0.0.tgz
     version: 1.0.0
   sonarr:
+  - apiVersion: v2
+    appVersion: 3.0.10.1567
+    created: "2023-10-09T12:07:54.08286188Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 28e1757fc65627e9dd963367fe7d4b9fc8cfba55a958e5447bb1d8c213058cac
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.1.12/sonarr-1.1.12.tgz
+    version: 1.1.12
   - apiVersion: v2
     appVersion: 3.0.10.1567
     created: "2023-09-29T21:07:47.823564898Z"
@@ -6524,4 +6633,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-10-09T12:07:04.53897738Z"
+generated: "2023-10-09T12:07:54.08414368Z"
