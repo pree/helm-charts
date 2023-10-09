@@ -1,6 +1,6 @@
 # prowlarr
 
-![Version: 1.22.1](https://img.shields.io/badge/Version-1.22.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.3.4013](https://img.shields.io/badge/AppVersion-1.9.3.4013-informational?style=flat-square)
+![Version: 1.22.2](https://img.shields.io/badge/Version-1.22.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.9.3.4013](https://img.shields.io/badge/AppVersion-1.9.3.4013-informational?style=flat-square)
 
 Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 
@@ -21,7 +21,7 @@ Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts/ | common | 1.5.1 |
+| https://bjw-s.github.io/helm-charts/ | common | 2.0.3 |
 
 ## Values
 

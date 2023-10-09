@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 1.1.2](https://img.shields.io/badge/Version-1.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.6.2232](https://img.shields.io/badge/AppVersion-0.3.6.2232-informational?style=flat-square)
+![Version: 1.1.3](https://img.shields.io/badge/Version-1.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.6.2232](https://img.shields.io/badge/AppVersion-0.3.6.2232-informational?style=flat-square)
 
 Book Manager and Automation (Sonarr for Ebooks)
 
@@ -21,7 +21,7 @@ Book Manager and Automation (Sonarr for Ebooks)
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts/ | common | 1.5.1 |
+| https://bjw-s.github.io/helm-charts/ | common | 2.0.3 |
 
 ## Values
 
