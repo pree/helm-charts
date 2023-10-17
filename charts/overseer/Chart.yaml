@@ -1,0 +1,22 @@
+apiVersion: v2
+name: overseerr
+description: Request management and media discovery tool for the Plex ecosystem
+type: application
+version: 1.0.0
+# renovate: image=sctx/overseerr
+appVersion: "1.33.2"
+keywords:
+  - radarr
+  - servarr
+  - plex
+home: https://github.com/pree/helm-charts/tree/master/charts/overseer
+icon: https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png
+sources:
+  - https://github.com/sct/overseerr
+maintainers:
+  - name: pree
+    email: pascal@reeb.io
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 1.5.1
