@@ -1,0 +1,10 @@
+prowlarr:
+  enabled: true
+  values:
+    env:
+      TZ: "Europe/Berlin"
+      LOG_LEVEL: "info"
+    
+    persistence:
+      config:
+        enabled: true

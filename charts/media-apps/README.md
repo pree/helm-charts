@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.5.4](https://img.shields.io/badge/Version-0.5.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.5.4](https://img.shields.io/badge/AppVersion-0.5.4-informational?style=flat-square)
+![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.0](https://img.shields.io/badge/AppVersion-0.6.0-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -40,6 +40,12 @@ Argo CD app-of-apps config for media applications
 | nfsMount.repoURL | string | [repo](https://git.reeb.io/pree/helm-charts) | Repo URL |
 | nfsMount.targetRevision | string | `"0.1.11"` | [nfsMount Helm chart](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount) |
 | nfsMount.values | object | [upstream values](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/values.yaml) | Helm values |
+| overseerr | object | [example](./example/overseerr.yaml) | [Overseerr](https://github.com/sct/overseerr) |
+| overseerr.destination.namespace | string | `"media-apps"` | Namespace |
+| overseerr.enabled | bool | `false` | Enable overseerr |
+| overseerr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
+| overseerr.targetRevision | string | `"1.0.0"` | [overseerr Helm Chart](https://github.com/pree/helm-charts/tree/master/charts/overseerr) |
+| overseerr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/overseerr/values.yaml) | Helm values |
 | prowlarr | object | [example](./examples/prowlarr.yaml) | [Prowlarr](https://github.com/Prowlarr/Prowlarr) |
 | prowlarr.chart | string | `"prowlarr"` | Chart |
 | prowlarr.destination.namespace | string | `"media-apps"` | Namespace |
