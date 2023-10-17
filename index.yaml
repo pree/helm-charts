@@ -4662,6 +4662,32 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/nfs-mount-0.1.10/nfs-mount-0.1.10.tgz
     version: 0.1.10
+  overseerr:
+  - apiVersion: v2
+    appVersion: 1.33.2
+    created: "2023-10-17T14:48:24.818342516Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Request management and media discovery tool for the Plex ecosystem
+    digest: 791c563352b9207d84d2ac77597a860527a32d778990339c95489d4e203f3fcd
+    home: https://github.com/pree/helm-charts/tree/master/charts/overseer
+    icon: https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png
+    keywords:
+    - radarr
+    - servarr
+    - plex
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: overseerr
+    sources:
+    - https://github.com/sct/overseerr
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/overseerr-1.0.0/overseerr-1.0.0.tgz
+    version: 1.0.0
   prowlarr:
   - apiVersion: v2
     appVersion: 1.9.3.4013
@@ -6704,4 +6730,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2023-10-10T12:58:28.876331604Z"
+generated: "2023-10-17T14:48:24.818783128Z"
