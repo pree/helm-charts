@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 1.1.2](https://img.shields.io/badge/Version-1.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.6.2232](https://img.shields.io/badge/AppVersion-0.3.6.2232-informational?style=flat-square)
+![Version: 2.0.0](https://img.shields.io/badge/Version-2.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.6.2232](https://img.shields.io/badge/AppVersion-0.3.6.2232-informational?style=flat-square)
 
 Book Manager and Automation (Sonarr for Ebooks)
 
@@ -21,17 +21,19 @@ Book Manager and Automation (Sonarr for Ebooks)
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts/ | common | 1.5.1 |
+| https://bjw-s.github.io/helm-charts/ | common | 2.0.3 |
 
 ## Values
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| env | object | See below | environment variables. |
-| env.TZ | string | `"UTC"` | Set the container timezone |
-| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/readarr-develop"` | image repository |
-| image.tag | string | `nil` |  |
+| controllers.main.containers.main.env | object | See below | environment variables. |
+| controllers.main.containers.main.env.TZ | string | `"UTC"` | Set the container timezone |
+| controllers.main.containers.main.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| controllers.main.containers.main.image.repository | string | `"ghcr.io/onedr0p/readarr-develop"` | image repository |
+| controllers.main.containers.main.image.tag | string | `nil` |  |
+| controllers.main.containers.main.probes | object | See values.yaml | Configures the probes for the main Pod. |
+| controllers.main.strategy | string | `"Recreate"` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |
 | metrics.exporter.env.additionalMetrics | bool | `false` | Set to true to enable gathering of additional metrics (slow) |
@@ -46,7 +48,6 @@ Book Manager and Automation (Sonarr for Ebooks)
 | metrics.serviceMonitor.labels | object | `{}` |  |
 | metrics.serviceMonitor.scrapeTimeout | string | `"1m"` |  |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. # Config persistence is required for the Prometheus exporter sidecar. |
-| probes | object | See values.yaml | Configures the probes for the main Pod. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
