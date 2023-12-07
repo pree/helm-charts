@@ -51,6 +51,7 @@ jobs:
 
       - name: Install Prometheus CRDs
         run: helm install prom-crds prometheus-community/prometheus-operator-crds
+        if: steps.list-changed.outputs.changed == 'true'
 
       - name: Run chart-testing (install)
         run: ct install
