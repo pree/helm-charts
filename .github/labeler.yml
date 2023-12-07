@@ -1,9 +1,35 @@
-'chart: ha-apps': charts/ha-apps/*
-'chart: home-assistant': charts/home-assistant/*
-'chart: media-apps': charts/media-apps/*
-'chart: nfs-mount': charts/nfs-mount/*
-'chart: pm-apps': charts/pm-apps/*
-'chart: prowlarr': charts/prowlarr/*
-'chart: radarr': charts/radarr/*
-'chart: sonarr': charts/sonarr/*
-'chart: readarr': charts/readarr/*
+'chart: ha-apps':
+- changed-files:
+  - any-glob-to-any-file: charts/ha-apps/**
+
+'chart: home-assistant':
+- changed-files:
+  - any-glob-to-any-file: charts/home-assistant/**
+
+'chart: media-apps':
+- changed-files:
+  - any-glob-to-any-file: charts/media-apps/**
+
+'chart: nfs-mount':
+- changed-files:
+  - any-glob-to-any-file: charts/nfs-mount/**
+
+'chart: pm-apps':
+- changed-files:
+  - any-glob-to-any-file: charts/pm-apps/**
+
+'chart: prowlarr':
+- changed-files:
+  - any-glob-to-any-file: charts/prowlarr/**
+
+'chart: radarr':
+- changed-files:
+  - any-glob-to-any-file: charts/radarr/**
+
+'chart: sonarr':
+- changed-files:
+  - any-glob-to-any-file: charts/sonarr/**
+
+'chart: readarr':
+- changed-files:
+  - any-glob-to-any-file: charts/readarr/**
