@@ -9,7 +9,7 @@ set -euxo pipefail
 GOMPLATE_VERSION=3.11.6
 
 # install gomplate
-curl --silent --show-error --fail --location --output ./.bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v"${HELM_DOCS_VERSION}"/gomplate_linux-amd64
+curl --silent --show-error --fail --location --output ./.bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v"${GOMPLATE_VERSION}"/gomplate_linux-amd64
 
 # validate docs
 gomplate -o README.md -f _templates/readme/README.md.gotmpl -d readme=_templates/readme/README.yaml
