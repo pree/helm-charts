@@ -7,3 +7,7 @@ appVersion: 0.1.12
 maintainers:
   - name: pree
     email: pascal@reeb.io
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: use template to generate README.md

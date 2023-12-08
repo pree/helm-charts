@@ -36,4 +36,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: remove postgresql version pinning
+      description: use template to generate README.md
