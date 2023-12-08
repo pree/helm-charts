@@ -1,0 +1,34 @@
+repos:
+  - repo: https://github.com/norwoodj/helm-docs
+    rev: v1.11.2
+    hooks:
+      - id: helm-docs
+        args:
+          - --template-files=./_templates/helm-docs/README.md.gotmpl
+  - repo: local
+    hooks:
+      - id: gomplate-readme
+        name: Update root README.md
+        language: golang
+        entry: gomplate
+        pass_filenames: false
+        require_serial: true
+        args:
+          - -o
+          - README.md
+          - -f
+          - _templates/readme/README.md.gotmpl
+          - -d
+          - readme=./_templates/readme/README.yaml
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-symlinks
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: detect-aws-credentials
+        args:
+          - --allow-missing-credentials
+      - id: detect-private-key

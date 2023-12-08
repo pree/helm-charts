@@ -2,7 +2,7 @@ apiVersion: v2
 name: overseerr
 description: Request management and media discovery tool for the Plex ecosystem
 type: application
-version: 1.0.0
+version: 1.0.1
 # renovate: image=sctx/overseerr
 appVersion: "1.33.2"
 keywords:

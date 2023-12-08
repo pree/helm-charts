@@ -19,6 +19,9 @@ jobs:
       - name: Run helm-docs
         run: .github/helm-docs.sh
 
+      - name: Check README.md
+        run: .github/readme.sh
+
       - name: Install dependencies
         run: |
           helm repo add adfinis https://charts.adfinis.com
