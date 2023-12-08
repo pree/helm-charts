@@ -12,7 +12,7 @@ nfsMount:
   # nfsMount.chart -- Chart
   chart: "nfs-mount"
   # nfsMount.targetRevision -- [nfsMount Helm chart](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount)
-  targetRevision: "0.1.11"
+  targetRevision: "0.1.12"
   # nfsMount.values -- Helm values
   # @default -- [upstream values](https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/values.yaml)
   values: {}
