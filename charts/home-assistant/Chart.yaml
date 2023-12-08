@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.30.2
+version: 1.30.3
 # renovate: image=ghcr.io/home-assistant/home-assistant
 appVersion: "2023.12.0"
 keywords:
@@ -36,4 +36,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: remove postgresql version pinning
+      description: use template to generate README.md

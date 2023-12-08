@@ -2,7 +2,7 @@ apiVersion: v2
 name: prowlarr
 description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 type: application
-version: 1.24.0
+version: 1.24.1
 # renovate: image=ghcr.io/onedr0p/prowlarr-develop
 appVersion: "1.10.5.4116"
 keywords:
@@ -22,3 +22,7 @@ dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts/
     version: 1.5.1
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: use template to generate README.md

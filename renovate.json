@@ -43,5 +43,8 @@
         "commands": ["bump-chart", "helm-docs"],
         "fileFilters": ["charts/*/Chart.yaml", "charts/*/README.md"],
         "executionMode": "update"
+    },
+    "pre-commit": {
+        "enabled": true
     }
 }

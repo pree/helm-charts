@@ -1,9 +1,13 @@
 apiVersion: v2
 name: nfs-mount
-home: https://git.reeb.io/pree/helm-charts/src/branch/master/charts/nfs-mount/README.md
+home: https://github.com/pree/helm-charts/tree/master/charts/nfs-mount
 description: NFS mount to access already present data
-version: 0.1.11
-appVersion: 0.1.11
+version: 0.1.12
+appVersion: 0.1.12
 maintainers:
   - name: pree
     email: pascal@reeb.io
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: use template to generate README.md
