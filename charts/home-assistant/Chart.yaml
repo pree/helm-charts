@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.30.1
+version: 1.30.2
 # renovate: image=ghcr.io/home-assistant/home-assistant
 appVersion: "2023.12.0"
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - homeassistant
   - smarthome
 home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
-icon: https://raw.githubusercontent.com/home-assistant/core/dev/docs/source/_static/logo.png
+icon: https://raw.githubusercontent.com/home-assistant/home-assistant.io/current/source/images/favicon-192x192.png
 sources:
   - https://github.com/home-assistant/core
 maintainers:
