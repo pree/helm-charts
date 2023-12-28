@@ -41,7 +41,7 @@
     }],
     "postUpgradeTasks": {
         "commands": ["bump-chart", "helm-docs --template-files _templates/helm-docs/README.md.gotmpl", "gomplate -o README.md -f _templates/readme/README.md.gotmpl -d readme=_templates/readme/README.yaml"],
-        "fileFilters": ["charts/*/Chart.yaml", "charts/*/README.md"],
+        "fileFilters": ["charts/*/Chart.yaml", "charts/*/README.md", "README.md"],
         "executionMode": "update"
     },
     "pre-commit": {
