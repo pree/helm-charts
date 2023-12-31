@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.6.8](https://img.shields.io/badge/Version-0.6.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.8](https://img.shields.io/badge/AppVersion-0.6.8-informational?style=flat-square)
+![Version: 0.6.9](https://img.shields.io/badge/Version-0.6.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.9](https://img.shields.io/badge/AppVersion-0.6.9-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -52,7 +52,7 @@ Argo CD app-of-apps config for media applications
 | prowlarr.destination.namespace | string | `"media-apps"` | Namespace |
 | prowlarr.enabled | bool | `false` | Enable Prowlarr |
 | prowlarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| prowlarr.targetRevision | string | `"1.25.0"` | [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr) |
+| prowlarr.targetRevision | string | `"1.26.0"` | [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr) |
 | prowlarr.values | object | [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml) | Helm values |
 | radarr | object | [example](./examples/radarr.yaml) | [Radarr](https://radarr.video/) |
 | radarr.chart | string | `"radarr"` | Chart |
@@ -66,14 +66,14 @@ Argo CD app-of-apps config for media applications
 | readarr.destination.namespace | string | `"media-apps"` | Namespace |
 | readarr.enabled | bool | `false` | Enable Readarr |
 | readarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| readarr.targetRevision | string | `"1.3.0"` | [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr) |
+| readarr.targetRevision | string | `"1.4.0"` | [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr) |
 | readarr.values | object | [upstream values](https://github.com/pree/charts/blob/master/charts/readarr/values.yaml) | Helm values |
 | sonarr | object | [example](./examples/sonarr.yaml) | [Sonarr](https://sonarr.tv/) |
 | sonarr.chart | string | `"sonarr"` | Chart |
 | sonarr.destination.namespace | string | `"media-apps"` | Namespace |
 | sonarr.enabled | bool | `false` | Enable Sonarr |
 | sonarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| sonarr.targetRevision | string | `"1.1.14"` | [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr) |
+| sonarr.targetRevision | string | `"1.2.0"` | [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr) |
 | sonarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml) | Helm values |
 
 ## License
