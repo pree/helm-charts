@@ -2,9 +2,9 @@ apiVersion: v2
 name: prowlarr
 description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 type: application
-version: 1.25.0
+version: 1.26.0
 # renovate: image=ghcr.io/onedr0p/prowlarr-develop
-appVersion: "1.11.3.4163"
+appVersion: "1.11.4.4173"
 keywords:
   - prowlarr
   - servarr
