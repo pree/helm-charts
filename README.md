@@ -45,7 +45,7 @@ A fork of Sonarr to work with movies à la Couchpotato
 [<img alt="radarr" src="https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png" width="128">](charts/radarr)
 #### [readarr](charts/readarr) chart
 
-![Version: 1.3.x](https://img.shields.io/badge/version-1.3.x-brightgreen) ![App version: 0.x](https://img.shields.io/badge/app%20version-0.x-brightgreen)
+![Version: 1.4.x](https://img.shields.io/badge/version-1.4.x-brightgreen) ![App version: 0.x](https://img.shields.io/badge/app%20version-0.x-brightgreen)
 
 Book Manager and Automation (Sonarr for Ebooks)
 
