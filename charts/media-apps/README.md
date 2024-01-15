@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.6.12](https://img.shields.io/badge/Version-0.6.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.12](https://img.shields.io/badge/AppVersion-0.6.12-informational?style=flat-square)
+![Version: 0.6.13](https://img.shields.io/badge/Version-0.6.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.13](https://img.shields.io/badge/AppVersion-0.6.13-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -20,7 +20,7 @@ Argo CD app-of-apps config for media applications
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.adfinis.com | argoconfig | 0.9.0 |
+| https://charts.adfinis.com | argoconfig | 0.9.1 |
 
 ## Values
 
