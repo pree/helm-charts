@@ -20,7 +20,7 @@ Argo CD app-of-apps config for media applications
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.adfinis.com | argoconfig | 0.9.0 |
+| https://charts.adfinis.com | argoconfig | 0.9.1 |
 
 ## Values
 

@@ -13,7 +13,7 @@ maintainers:
     email: pascal@reeb.io
 dependencies:
   - name: argoconfig
-    version: 0.9.0
+    version: 0.9.1
     repository: https://charts.adfinis.com
 annotations:
   artifacthub.io/changes: |
