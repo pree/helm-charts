@@ -52,7 +52,7 @@ Book Manager and Automation (Sonarr for Ebooks)
 [<img alt="readarr" src="https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png" width="128">](charts/readarr)
 #### [sonarr](charts/sonarr) chart
 
-![Version: 1.3.x](https://img.shields.io/badge/version-1.3.x-brightgreen) ![App version: 4.0.x](https://img.shields.io/badge/app%20version-4.0.x-brightgreen)
+![Version: 1.4.x](https://img.shields.io/badge/version-1.4.x-brightgreen) ![App version: 4.0.x](https://img.shields.io/badge/app%20version-4.0.x-brightgreen)
 
 Smart PVR for newsgroup and bittorrent users
 
