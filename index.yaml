@@ -8136,6 +8136,37 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 0.3.18.2411
+    created: "2024-02-05T17:23:46.911787642Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Book Manager and Automation (Sonarr for Ebooks)
+    digest: 3569e51fc33ceba24ec1715e09834c5f6f9ece511338184e56b90f2b198f1415
+    home: https://github.com/pree/helm-charts/tree/master/charts/readarr
+    icon: https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png
+    keywords:
+    - readarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/onedr0p/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/readarr-1.7.0/readarr-1.7.0.tgz
+    version: 1.7.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 0.3.17.2409
     created: "2024-02-03T17:51:09.848599461Z"
     dependencies:
@@ -9067,4 +9098,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2024-02-04T12:19:07.397090398Z"
+generated: "2024-02-05T17:23:46.912260694Z"
