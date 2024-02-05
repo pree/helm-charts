@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 1.6.1](https://img.shields.io/badge/Version-1.6.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.17.2409](https://img.shields.io/badge/AppVersion-0.3.17.2409-informational?style=flat-square)
+![Version: 1.7.0](https://img.shields.io/badge/Version-1.7.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.18.2411](https://img.shields.io/badge/AppVersion-0.3.18.2411-informational?style=flat-square)
 
 Book Manager and Automation (Sonarr for Ebooks)
 
