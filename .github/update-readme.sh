@@ -6,10 +6,10 @@ export PATH="./.bin:$PATH"
 set -euxo pipefail
 
 # renovate: datasource=github-releases depName=gomplate packageName=hairyhenderson/gomplate
-GOMPLATE_VERSION=3.11.6
+GOMPLATE_VERSION=v3.11.7
 
 # install gomplate
-curl --silent --show-error --fail --location --output ./.bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v"${GOMPLATE_VERSION}"/gomplate_linux-amd64
+curl --silent --show-error --fail --location --output ./.bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/"${GOMPLATE_VERSION}"/gomplate_linux-amd64
 chmod +x ./.bin/gomplate
 
 # validate docs
