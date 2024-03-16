@@ -17,7 +17,7 @@ helm repo add pree https://charts.pree.dev
 ### Available Helm charts
 #### [home-assistant](charts/home-assistant) chart
 
-![Version: 1.3.x](https://img.shields.io/badge/version-1.3.x-brightgreen) ![App version: 202.x](https://img.shields.io/badge/app%20version-202.x-brightgreen)
+![Version: 1.4.x](https://img.shields.io/badge/version-1.4.x-brightgreen) ![App version: 202.x](https://img.shields.io/badge/app%20version-202.x-brightgreen)
 
 Open source home automation that puts local control and privacy first
 
