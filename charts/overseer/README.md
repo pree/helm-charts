@@ -1,6 +1,6 @@
 # overseerr
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.33.2](https://img.shields.io/badge/AppVersion-1.33.2-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.33.2](https://img.shields.io/badge/AppVersion-1.33.2-informational?style=flat-square)
 
 Request management and media discovery tool for the Plex ecosystem
 
@@ -20,7 +20,7 @@ Request management and media discovery tool for the Plex ecosystem
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts/ | common | 1.5.1 |
+| https://bjw-s.github.io/helm-charts/ | common | 3.1.0 |
 
 ## Values
 
