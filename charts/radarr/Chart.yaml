@@ -2,9 +2,9 @@ apiVersion: v2
 name: radarr
 description: A fork of Sonarr to work with movies à la Couchpotato
 type: application
-version: 1.8.3
+version: 1.9.0
 # renovate: image=ghcr.io/onedr0p/radarr
-appVersion: "5.3.6.8612"
+appVersion: "5.5.3.8819"
 keywords:
   - radarr
   - servarr
