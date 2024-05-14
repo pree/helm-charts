@@ -2,7 +2,7 @@ apiVersion: v2
 name: readarr
 description: Book Manager and Automation (Sonarr for Ebooks)
 type: application
-version: 1.8.0
+version: 1.8.1
 # renovate: image=ghcr.io/onedr0p/readarr-develop
 appVersion: "0.3.19.2437"
 keywords:
