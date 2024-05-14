@@ -29,15 +29,18 @@
     ],
     "packageRules": [{
         "description": "Trim leading v from version for helm-docs",
-        "matchPackageNames": ["helm-docs"],
+        "matchDepNames": ["helm-docs"],
         "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
     }, {
-        "matchPackageNames": ["postgresql", "mariadb", "influxdb"],
+        "matchDepNames": ["postgresql", "mariadb", "influxdb"],
         "groupName": "database dependencies"
     }, {
-        "matchPackageNames": ["radarr", "sonarr", "prowlarr", "readarr"],
+        "matchDepNames": ["radarr", "sonarr", "prowlarr", "readarr"],
         "groupName": "servarr apps",
         "matchManagers": ["regex"]
+    }, {
+        "matchDepNames": ["helm-docs", "norwoodj/helm-docs"],
+        "groupName": "helm-docs"
     }],
     "postUpgradeTasks": {
         "commands": ["bump-chart", "helm-docs --template-files _templates/helm-docs/README.md.gotmpl", "gomplate -o README.md -f _templates/readme/README.md.gotmpl -d readme=_templates/readme/README.yaml"],
