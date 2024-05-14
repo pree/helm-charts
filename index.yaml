@@ -1176,6 +1176,48 @@ entries:
           description: use template to generate README.md
     apiVersion: v2
     appVersion: 2024.3.1
+    created: "2024-05-14T10:40:55.091053785Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.5.0
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.18.1
+    description: Open source home automation that puts local control and privacy first
+    digest: f6da65788d5b90a3c82bbc5ecabf24a926a5130fa22fcd85e02384b3de062173
+    home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+    icon: https://raw.githubusercontent.com/home-assistant/home-assistant.io/current/source/images/favicon-192x192.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    - smarthome
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/home-assistant-1.40.1/home-assistant-1.40.1.tgz
+    version: 1.40.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 2024.3.1
     created: "2024-03-16T11:57:02.644410921Z"
     dependencies:
     - name: common
@@ -10106,4 +10148,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2024-05-14T09:29:30.542954733Z"
+generated: "2024-05-14T10:40:55.091632392Z"
