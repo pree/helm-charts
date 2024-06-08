@@ -2,9 +2,9 @@ apiVersion: v2
 name: sonarr
 description: Smart PVR for newsgroup and bittorrent users
 type: application
-version: 1.6.0
+version: 1.7.0
 # renovate: image=ghcr.io/onedr0p/sonarr
-appVersion: "4.0.4.1491"
+appVersion: "4.0.5.1710"
 keywords:
   - sonarr
   - servarr
