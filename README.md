@@ -38,7 +38,7 @@ Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base
 [<img alt="prowlarr" src="https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png" width="128">](charts/prowlarr)
 #### [radarr](charts/radarr) chart
 
-![Version: 1.1.x](https://img.shields.io/badge/version-1.1.x-brightgreen) ![App version: 5.6.x](https://img.shields.io/badge/app%20version-5.6.x-brightgreen)
+![Version: 1.1.x](https://img.shields.io/badge/version-1.1.x-brightgreen) ![App version: 5.7.x](https://img.shields.io/badge/app%20version-5.7.x-brightgreen)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
