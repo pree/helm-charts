@@ -33,6 +33,10 @@ additionalContainers:
         subPath: {{ .Values.persistence.config.subPath }}
         {{ end }}
       {{ end }}
+    {{- if .Values.metrics.exporter.resources }}
+    resources: {{ toYaml .Values.metrics.exporter.resources | indent 6 }}
+    {{- end }}
+
 
 service:
   metrics:
