@@ -34,7 +34,8 @@ additionalContainers:
         {{ end }}
       {{ end }}
     {{- if .Values.metrics.exporter.resources }}
-    resources: {{ toYaml .Values.metrics.exporter.resources | indent 6 }}
+    resources:
+      {{- toYaml .Values.metrics.exporter.resources | nindent 6 }}
     {{- end }}
 
 
