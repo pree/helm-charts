@@ -2,7 +2,7 @@ apiVersion: v2
 name: prowlarr
 description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 type: application
-version: 1.35.0
+version: 1.35.1
 # renovate: image=ghcr.io/onedr0p/prowlarr-develop
 appVersion: "1.19.0.4568"
 keywords:
@@ -10,7 +10,7 @@ keywords:
   - servarr
   - torrent
   - usenet
-home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+home: https://github.com/pree/helm-charts/tree/master/charts/prowlarr
 icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
 sources:
   - https://github.com/Prowlarr/Prowlarr
