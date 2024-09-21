@@ -38,7 +38,6 @@ additionalContainers:
       {{- toYaml .Values.metrics.exporter.resources | nindent 6 }}
     {{- end }}
 
-
 service:
   metrics:
     enabled: true
