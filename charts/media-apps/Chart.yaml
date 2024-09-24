@@ -3,8 +3,8 @@ name: media-apps
 description: Argo CD app-of-apps config for media applications
 type: application
 # version and appVersion are in sync in this chart!
-version: 0.6.24
-appVersion: 0.6.24
+version: 0.6.25
+appVersion: 0.6.25
 home: https://github.com/pree/helm-charts/tree/master/charts/media-apps
 sources:
   - https://github.com/pree/helm-charts
