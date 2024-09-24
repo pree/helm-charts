@@ -5562,6 +5562,30 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 0.6.25
+    created: "2024-09-24T20:15:33.660304951Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.1
+    description: Argo CD app-of-apps config for media applications
+    digest: b059701765e048ccbf95d579773561c6fc623a982aec2b629e7a5e591beb2611
+    home: https://github.com/pree/helm-charts/tree/master/charts/media-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: media-apps
+    sources:
+    - https://github.com/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/media-apps-0.6.25/media-apps-0.6.25.tgz
+    version: 0.6.25
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 0.6.24
     created: "2024-09-21T00:43:52.955180941Z"
     dependencies:
@@ -11332,4 +11356,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2024-09-24T20:15:05.45682735Z"
+generated: "2024-09-24T20:15:33.660922464Z"
