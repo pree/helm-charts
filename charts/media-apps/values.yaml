@@ -72,7 +72,7 @@ prowlarr:
   # prowlarr.chart -- Chart
   chart: "prowlarr"
   # prowlarr.targetRevision -- [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr)
-  targetRevision: "1.36.0"
+  targetRevision: "1.37.0"
   # prowlarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml)
   values: {}
