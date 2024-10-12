@@ -13,7 +13,7 @@ homeassistant:
   # homeassistant.chart -- Chart
   chart: "home-assistant"
   # homeassistant.targetRevision -- [Home Assistant Helm chart](https://github.com/pree/helm-charts/tree/master/charts/home-assistant)
-  targetRevision: "1.49.0"
+  targetRevision: "1.50.0"
   # homeassistant.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/home-assistant/values.yaml)
   values: {}
