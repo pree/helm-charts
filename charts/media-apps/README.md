@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.6.29](https://img.shields.io/badge/Version-0.6.29-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.29](https://img.shields.io/badge/AppVersion-0.6.29-informational?style=flat-square)
+![Version: 0.6.30](https://img.shields.io/badge/Version-0.6.30-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.30](https://img.shields.io/badge/AppVersion-0.6.30-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -59,7 +59,7 @@ Argo CD app-of-apps config for media applications
 | radarr.destination.namespace | string | `"media-apps"` | Namespace |
 | radarr.enabled | bool | `false` | Enable Radarr |
 | radarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| radarr.targetRevision | string | `"1.13.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
+| radarr.targetRevision | string | `"1.14.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
 | radarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml) | Helm values |
 | readarr | object | [example](./example/readarr.yaml) | [Readarr](https://github.com/Readarr/Readarr) |
 | readarr.chart | string | `"readarr"` | Chart |
