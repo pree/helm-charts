@@ -7789,6 +7789,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: use ghcr.io as image repository
+    apiVersion: v2
+    appVersion: 1.33.2
+    created: "2024-12-21T09:27:39.383807506Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Request management and media discovery tool for the Plex ecosystem
+    digest: 272dac6926aa5ff3990024fe7af3de558424e2d107ba31f65cd83643dcb0c790
+    home: https://github.com/pree/helm-charts/tree/master/charts/overseer
+    icon: https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png
+    keywords:
+    - radarr
+    - servarr
+    - plex
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: overseerr
+    sources:
+    - https://github.com/sct/overseerr
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/overseerr-1.0.2/overseerr-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: use template to generate README.md
     apiVersion: v2
     appVersion: 1.33.2
@@ -12170,4 +12199,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2024-10-13T22:09:25.499605416Z"
+generated: "2024-12-21T09:27:39.384446648Z"
