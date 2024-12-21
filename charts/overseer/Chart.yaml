@@ -2,8 +2,8 @@ apiVersion: v2
 name: overseerr
 description: Request management and media discovery tool for the Plex ecosystem
 type: application
-version: 1.0.1
-# renovate: image=sctx/overseerr
+version: 1.0.2
+# renovate: image=ghcr.io/sct/overseerr
 appVersion: "1.33.2"
 keywords:
   - radarr
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: use template to generate README.md
+      description: use ghcr.io as image repository
