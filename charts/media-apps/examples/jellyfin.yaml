@@ -1,0 +1,10 @@
+jellyfin:
+  enabled: true
+  values:
+    persistence:
+      config:
+        enabled: true
+
+      media:
+        enabled: true
+        existingClaim: pvc-movies
