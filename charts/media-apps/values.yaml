@@ -136,3 +136,23 @@ overseerr:
   # overseerr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/overseerr/values.yaml)
   values: {}
+
+# jellyfin -- [Jellyfin](https://github.com/jellyfin/jellyfin)
+# @default -- [example](./example/jellyfin.yaml)
+jellyfin:
+  # jellyfin.enabled -- Enable Jellyfin
+  enabled: false
+  name: jellyfin
+  destination:
+    # jellyfin.destination.namespace -- Namespace
+    namespace: "media-apps"
+  # jellyfin.repoURL -- Repo URL
+  # @default -- [repo](https://jellyfin.github.io/jellyfin-helm)
+  repoURL: "https://jellyfin.github.io/jellyfin-helm"
+  # jellyfin.chart -- Chart
+  chart: "jellyfin"
+  # jellyfin.targetRevision -- [jellyfin Helm chart](https://github.com/jellyfin/jellyfin-helm/tree/master/charts/jellyfin)
+  targetRevision: "2.1.0"
+  # jellyfin.values -- Helm values
+  # @default -- [upstream values](https://github.com/jellyfin/jellyfin-helm/blob/master/charts/jellyfin/values.yaml)
+  values: {}

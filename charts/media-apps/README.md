@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.6.32](https://img.shields.io/badge/Version-0.6.32-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.6.32](https://img.shields.io/badge/AppVersion-0.6.32-informational?style=flat-square)
+![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.0](https://img.shields.io/badge/AppVersion-0.7.0-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -33,6 +33,13 @@ Argo CD app-of-apps config for media applications
 | clusterplex.repoURL | string | [repo](https://github.com/pabloromeo/clusterplex) | Repo URL |
 | clusterplex.targetRevision | string | `"1.1.8"` | [clusterplex Helm chart](https://github.com/pabloromeo/clusterplex/tree/master/charts/clusterplex) |
 | clusterplex.values | object | [upstream values](https://github.com/pabloromeo/clusterplex/blob/master/charts/clusterplex/values.yaml) | Helm values |
+| jellyfin | object | [example](./example/jellyfin.yaml) | [Jellyfin](https://github.com/jellyfin/jellyfin) |
+| jellyfin.chart | string | `"jellyfin"` | Chart |
+| jellyfin.destination.namespace | string | `"media-apps"` | Namespace |
+| jellyfin.enabled | bool | `false` | Enable Jellyfin |
+| jellyfin.repoURL | string | [repo](https://jellyfin.github.io/jellyfin-helm) | Repo URL |
+| jellyfin.targetRevision | string | `"2.1.0"` | [jellyfin Helm chart](https://github.com/jellyfin/jellyfin-helm/tree/master/charts/jellyfin) |
+| jellyfin.values | object | [upstream values](https://github.com/jellyfin/jellyfin-helm/blob/master/charts/jellyfin/values.yaml) | Helm values |
 | nfsMount | object | `{"chart":"nfs-mount","destination":{"namespace":"media-apps"},"enabled":false,"name":"nas-media","repoURL":"https://charts.pree.dev","targetRevision":"0.1.12","values":{}}` | This is used to create a PVC for a media share via NFS |
 | nfsMount.chart | string | `"nfs-mount"` | Chart |
 | nfsMount.destination.namespace | string | `"media-apps"` | Namespace |
