@@ -1,6 +1,6 @@
 # sonarr
 
-![Version: 1.8.0](https://img.shields.io/badge/Version-1.8.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.9.2244](https://img.shields.io/badge/AppVersion-4.0.9.2244-informational?style=flat-square)
+![Version: 1.9.0](https://img.shields.io/badge/Version-1.9.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.13.2932](https://img.shields.io/badge/AppVersion-4.0.13.2932-informational?style=flat-square)
 
 Smart PVR for newsgroup and bittorrent users
 
