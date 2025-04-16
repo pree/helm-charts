@@ -24,7 +24,7 @@ Open source home automation that puts local control and privacy first
 [<img alt="home-assistant" src="https://raw.githubusercontent.com/home-assistant/home-assistant.io/current/source/images/favicon-192x192.png" width="128">](charts/home-assistant)
 #### [overseer](charts/overseer) chart
 
-![Version: 1.0.x](https://img.shields.io/badge/version-1.0.x-brightgreen) ![App version: 1.3.x](https://img.shields.io/badge/app%20version-1.3.x-brightgreen)
+![Version: 1.1.x](https://img.shields.io/badge/version-1.1.x-brightgreen) ![App version: 1.3.x](https://img.shields.io/badge/app%20version-1.3.x-brightgreen)
 
 Request management and media discovery tool for the Plex ecosystem
 
