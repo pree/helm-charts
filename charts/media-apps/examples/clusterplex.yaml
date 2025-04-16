@@ -7,11 +7,11 @@ clusterplex:
       sharedStorage:
         transcode:
           enabled: false
-      
+
         media:
           enabled: true
           existingClaim: "media"
-    
+
     pms:
       enabled: true
       config:
@@ -19,21 +19,20 @@ clusterplex:
         plexClaimToken: "plexclaim-token"
         version: "latest"
         localRelayEnabled: false
-      
+
       serviceConfig:
         externalTrafficPolicy: "local"
-      
+
       ingressConfig:
         enabled: false
-      
+
       configVolume:
         enabled: true
         storageClass: "default"
         size: "25Gi"
-      
+
     orchestrator:
       enabled: false
 
     worker:
       enabled: false
-    

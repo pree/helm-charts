@@ -2,9 +2,9 @@ apiVersion: v2
 name: radarr
 description: A fork of Sonarr to work with movies à la Couchpotato
 type: application
-version: 1.14.0
-# renovate: image=ghcr.io/onedr0p/radarr
-appVersion: "5.12.2.9335"
+version: 1.15.0
+# renovate: image=ghcr.io/home-operations/radarr
+appVersion: "5.22.2.9862"
 keywords:
   - radarr
   - servarr
@@ -14,7 +14,7 @@ home: https://github.com/pree/helm-charts/tree/master/charts/radarr
 icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
 sources:
   - https://github.com/Radarr/Radarr
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: pree
     email: pascal@reeb.io

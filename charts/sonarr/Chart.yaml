@@ -2,9 +2,9 @@ apiVersion: v2
 name: sonarr
 description: Smart PVR for newsgroup and bittorrent users
 type: application
-version: 1.9.0
-# renovate: image=ghcr.io/onedr0p/sonarr
-appVersion: "4.0.13.2932"
+version: 1.10.0
+# renovate: image=ghcr.io/home-operations/sonarr
+appVersion: "4.0.14.2938"
 keywords:
   - sonarr
   - servarr
@@ -14,7 +14,7 @@ home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
 icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
 sources:
   - https://github.com/Sonarr/Sonarr
-  - https://github.com/onedr0p/containers
+  - https://github.com/home-operations/containers
 maintainers:
   - name: pree
     email: pascal@reeb.io

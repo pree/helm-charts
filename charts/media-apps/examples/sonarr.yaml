@@ -3,7 +3,7 @@ sonarr:
   values:
     env:
       TZ: "Europe/Berlin"
-    
+
     persistence:
       config:
         enabled: true
