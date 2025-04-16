@@ -3,8 +3,8 @@ name: ha-apps
 description: Argo CD app-of-apps config for home automation applications
 type: application
 # version and appVersion are in sync in this chart!
-version: 0.3.79
-appVersion: 0.3.79
+version: 0.3.80
+appVersion: 0.3.80
 home: https://github.com/pree/helm-charts/tree/master/charts/ha-apps
 sources:
   - https://github.com/pree/helm-charts
