@@ -152,7 +152,7 @@ jellyfin:
   # jellyfin.chart -- Chart
   chart: "jellyfin"
   # jellyfin.targetRevision -- [jellyfin Helm chart](https://github.com/jellyfin/jellyfin-helm/tree/master/charts/jellyfin)
-  targetRevision: "2.1.0"
+  targetRevision: "2.3.0"
   # jellyfin.values -- Helm values
   # @default -- [upstream values](https://github.com/jellyfin/jellyfin-helm/blob/master/charts/jellyfin/values.yaml)
   values: {}
