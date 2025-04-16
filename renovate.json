@@ -1,50 +1,91 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base"
+        "config:recommended"
     ],
-    "assignees": ["pree"],
-    "regexManagers": [{
+    "assignees": [
+        "pree"
+    ],
+    "customManagers": [
+        {
+            "customType": "regex",
             "datasourceTemplate": "docker",
-            "fileMatch": ["(^|/)Chart\\.yaml$"],
+            "fileMatch": [
+                "(^|/)Chart\\.yaml$"
+            ],
             "matchStrings": [
                 "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)\""
             ]
         },
         {
+            "customType": "regex",
             "datasourceTemplate": "helm",
-            "fileMatch": ["(^|/)values\\.yaml$"],
+            "fileMatch": [
+                "(^|/)values\\.yaml$"
+            ],
             "matchStrings": [
                 "repoURL: \"(?<registryUrl>.*?)\"\\s.*\\s*chart: \"(?<depName>.*?)\"\\s.*\\s*targetRevision: \"(?<currentValue>[\\w+\\.\\-]*)\""
             ]
         },
         {
+            "customType": "regex",
             "description": "Update _VERSION variables in shell scripts",
-            "fileMatch": ["\\.sh$"],
+            "fileMatch": [
+                "\\.sh$"
+            ],
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\s[A-Z_]+?_VERSION=(?<currentValue>.+?)\\s"
             ],
             "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
         }
     ],
-    "packageRules": [{
-        "description": "Trim leading v from version for helm-docs",
-        "matchDepNames": ["helm-docs"],
-        "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
-    }, {
-        "matchDepNames": ["postgresql", "mariadb", "influxdb"],
-        "groupName": "database dependencies"
-    }, {
-        "matchDepNames": ["radarr", "sonarr", "prowlarr", "readarr"],
-        "groupName": "servarr apps",
-        "matchManagers": ["regex"]
-    }, {
-        "matchDepNames": ["helm-docs", "norwoodj/helm-docs"],
-        "groupName": "helm-docs"
-    }],
+    "packageRules": [
+        {
+            "description": "Trim leading v from version for helm-docs",
+            "matchDepNames": [
+                "helm-docs"
+            ],
+            "extractVersion": "^v(?<version>\\d+\\.\\d+\\.\\d+)$"
+        },
+        {
+            "matchDepNames": [
+                "postgresql",
+                "mariadb",
+                "influxdb"
+            ],
+            "groupName": "database dependencies"
+        },
+        {
+            "matchDepNames": [
+                "radarr",
+                "sonarr",
+                "prowlarr",
+                "readarr"
+            ],
+            "groupName": "servarr apps",
+            "matchManagers": [
+                "custom.regex"
+            ]
+        },
+        {
+            "matchDepNames": [
+                "helm-docs",
+                "norwoodj/helm-docs"
+            ],
+            "groupName": "helm-docs"
+        }
+    ],
     "postUpgradeTasks": {
-        "commands": ["bump-chart", "helm-docs --template-files _templates/helm-docs/README.md.gotmpl", "gomplate -o README.md -f _templates/readme/README.md.gotmpl -d readme=_templates/readme/README.yaml"],
-        "fileFilters": ["charts/*/Chart.yaml", "charts/*/README.md", "README.md"],
+        "commands": [
+            "bump-chart",
+            "helm-docs --template-files _templates/helm-docs/README.md.gotmpl",
+            "gomplate -o README.md -f _templates/readme/README.md.gotmpl -d readme=_templates/readme/README.yaml"
+        ],
+        "fileFilters": [
+            "charts/*/Chart.yaml",
+            "charts/*/README.md",
+            "README.md"
+        ],
         "executionMode": "update"
     },
     "pre-commit": {
