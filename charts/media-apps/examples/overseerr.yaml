@@ -4,7 +4,7 @@ prowlarr:
     env:
       TZ: "Europe/Berlin"
       LOG_LEVEL: "info"
-    
+
     persistence:
       config:
         enabled: true

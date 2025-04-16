@@ -1,6 +1,6 @@
 # readarr
 
-![Version: 1.12.0](https://img.shields.io/badge/Version-1.12.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.32.2587](https://img.shields.io/badge/AppVersion-0.3.32.2587-informational?style=flat-square)
+![Version: 1.13.0](https://img.shields.io/badge/Version-1.13.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.14.2782](https://img.shields.io/badge/AppVersion-0.4.14.2782-informational?style=flat-square)
 
 Book Manager and Automation (Sonarr for Ebooks)
 
@@ -15,7 +15,7 @@ Book Manager and Automation (Sonarr for Ebooks)
 ## Source Code
 
 * <https://github.com/Readarr/Readarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Book Manager and Automation (Sonarr for Ebooks)
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/readarr-develop"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/readarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |

@@ -1,6 +1,6 @@
 # radarr
 
-![Version: 1.14.0](https://img.shields.io/badge/Version-1.14.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.12.2.9335](https://img.shields.io/badge/AppVersion-5.12.2.9335-informational?style=flat-square)
+![Version: 1.15.0](https://img.shields.io/badge/Version-1.15.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.22.2.9862](https://img.shields.io/badge/AppVersion-5.22.2.9862-informational?style=flat-square)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -15,7 +15,7 @@ A fork of Sonarr to work with movies à la Couchpotato
 ## Source Code
 
 * <https://github.com/Radarr/Radarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -30,7 +30,7 @@ A fork of Sonarr to work with movies à la Couchpotato
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/radarr"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/radarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |

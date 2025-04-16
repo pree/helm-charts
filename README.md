@@ -31,14 +31,14 @@ Request management and media discovery tool for the Plex ecosystem
 [<img alt="overseer" src="https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png" width="128">](charts/overseer)
 #### [prowlarr](charts/prowlarr) chart
 
-![Version: 1.4.x](https://img.shields.io/badge/version-1.4.x-brightgreen) ![App version: 1.2.x](https://img.shields.io/badge/app%20version-1.2.x-brightgreen)
+![Version: 1.4.x](https://img.shields.io/badge/version-1.4.x-brightgreen) ![App version: 1.3.x](https://img.shields.io/badge/app%20version-1.3.x-brightgreen)
 
 Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 
 [<img alt="prowlarr" src="https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png" width="128">](charts/prowlarr)
 #### [radarr](charts/radarr) chart
 
-![Version: 1.1.x](https://img.shields.io/badge/version-1.1.x-brightgreen) ![App version: 5.1.x](https://img.shields.io/badge/app%20version-5.1.x-brightgreen)
+![Version: 1.1.x](https://img.shields.io/badge/version-1.1.x-brightgreen) ![App version: 5.2.x](https://img.shields.io/badge/app%20version-5.2.x-brightgreen)
 
 A fork of Sonarr to work with movies à la Couchpotato
 
@@ -52,7 +52,7 @@ Book Manager and Automation (Sonarr for Ebooks)
 [<img alt="readarr" src="https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png" width="128">](charts/readarr)
 #### [sonarr](charts/sonarr) chart
 
-![Version: 1.9.x](https://img.shields.io/badge/version-1.9.x-brightgreen) ![App version: 4.0.x](https://img.shields.io/badge/app%20version-4.0.x-brightgreen)
+![Version: 1.1.x](https://img.shields.io/badge/version-1.1.x-brightgreen) ![App version: 4.0.x](https://img.shields.io/badge/app%20version-4.0.x-brightgreen)
 
 Smart PVR for newsgroup and bittorrent users
 

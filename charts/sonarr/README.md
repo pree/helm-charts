@@ -1,6 +1,6 @@
 # sonarr
 
-![Version: 1.9.0](https://img.shields.io/badge/Version-1.9.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.13.2932](https://img.shields.io/badge/AppVersion-4.0.13.2932-informational?style=flat-square)
+![Version: 1.10.0](https://img.shields.io/badge/Version-1.10.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.14.2938](https://img.shields.io/badge/AppVersion-4.0.14.2938-informational?style=flat-square)
 
 Smart PVR for newsgroup and bittorrent users
 
@@ -15,7 +15,7 @@ Smart PVR for newsgroup and bittorrent users
 ## Source Code
 
 * <https://github.com/Sonarr/Sonarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Smart PVR for newsgroup and bittorrent users
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/sonarr"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/sonarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |

@@ -3,7 +3,7 @@ mosquitto:
   values:
     env:
       TZ: "Europe/Berlin"
-    
+
     persistence:
       data:
         enabled: true

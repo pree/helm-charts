@@ -1,6 +1,6 @@
 # prowlarr
 
-![Version: 1.40.0](https://img.shields.io/badge/Version-1.40.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.25.2.4794](https://img.shields.io/badge/AppVersion-1.25.2.4794-informational?style=flat-square)
+![Version: 1.41.0](https://img.shields.io/badge/Version-1.41.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.34.0.5016](https://img.shields.io/badge/AppVersion-1.34.0.5016-informational?style=flat-square)
 
 Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 
@@ -15,7 +15,7 @@ Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base
 ## Source Code
 
 * <https://github.com/Prowlarr/Prowlarr>
-* <https://github.com/onedr0p/containers>
+* <https://github.com/home-operations/containers>
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base
 | env | object | See below | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/onedr0p/prowlarr-develop"` | image repository |
+| image.repository | string | `"ghcr.io/home-operations/prowlarr"` | image repository |
 | image.tag | string | `nil` |  |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | metrics.enabled | bool | See values.yaml | Enable and configure Exportarr sidecar and Prometheus serviceMonitor. |
