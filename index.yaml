@@ -8421,6 +8421,38 @@ entries:
           description: use template to generate README.md
     apiVersion: v2
     appVersion: 1.34.0.5016
+    created: "2025-04-20T13:35:02.55563287Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: e0865c261d99334945eb44aac7d3e7b12bb72cfd3881ee12ba0096e842478344
+    home: https://github.com/pree/helm-charts/tree/master/charts/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.41.2/prowlarr-1.41.2.tgz
+    version: 1.41.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 1.34.0.5016
     created: "2025-04-16T13:48:55.686413857Z"
     dependencies:
     - name: common
@@ -10318,6 +10350,37 @@ entries:
           description: use template to generate README.md
     apiVersion: v2
     appVersion: 5.22.3.9889
+    created: "2025-04-20T13:35:02.653137142Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 9aa08787476ed0bf93966429675117c8fc86a2198d9d2346fdf498221da28dc3
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.16.1/radarr-1.16.1.tgz
+    version: 1.16.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 5.22.3.9889
     created: "2025-04-20T08:51:55.080322258Z"
     dependencies:
     - name: common
@@ -11413,6 +11476,37 @@ entries:
           description: use template to generate README.md
     apiVersion: v2
     appVersion: 0.4.15.2787
+    created: "2025-04-20T13:35:02.769270592Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Book Manager and Automation (Sonarr for Ebooks)
+    digest: 2d958d7baf48c252ce7532fa383b8304af4734deb2aaf4de8cfe407c76aeeaa2
+    home: https://github.com/pree/helm-charts/tree/master/charts/readarr
+    icon: https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/512.png
+    keywords:
+    - readarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: readarr
+    sources:
+    - https://github.com/Readarr/Readarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/readarr-1.14.1/readarr-1.14.1.tgz
+    version: 1.14.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 0.4.15.2787
     created: "2025-04-20T08:52:05.463623676Z"
     dependencies:
     - name: common
@@ -12159,6 +12253,37 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/readarr-1.0.0/readarr-1.0.0.tgz
     version: 1.0.0
   sonarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 4.0.14.2938
+    created: "2025-04-20T13:35:02.88288276Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 4d63cbb31dce1f93fd090836c29cd89ec80f431d1a73db744b8519a64916556f
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.10.2/sonarr-1.10.2.tgz
+    version: 1.10.2
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -13087,4 +13212,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2025-04-20T08:52:05.464300549Z"
+generated: "2025-04-20T13:35:02.884030623Z"
