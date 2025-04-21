@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.53.1
+version: 1.53.2
 # renovate: image=ghcr.io/home-assistant/home-assistant
 appVersion: "2025.4.3"
 keywords:
@@ -30,7 +30,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: influxdb
-    version: 6.6.5
+    version: 6.6.6
     repository: https://charts.bitnami.com/bitnami
     condition: influxdb.enabled
 annotations:
