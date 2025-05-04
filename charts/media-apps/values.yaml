@@ -132,7 +132,7 @@ overseerr:
   # overseerr.chart -- Chart
   chart: "overseerr"
   # overseerr.targetRevision -- [overseerr Helm Chart](https://github.com/pree/helm-charts/tree/master/charts/overseerr)
-  targetRevision: "1.1.0"
+  targetRevision: "1.1.1"
   # overseerr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/overseerr/values.yaml)
   values: {}

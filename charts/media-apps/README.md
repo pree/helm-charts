@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.7.6](https://img.shields.io/badge/Version-0.7.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.6](https://img.shields.io/badge/AppVersion-0.7.6-informational?style=flat-square)
+![Version: 0.7.7](https://img.shields.io/badge/Version-0.7.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.7](https://img.shields.io/badge/AppVersion-0.7.7-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -52,7 +52,7 @@ Argo CD app-of-apps config for media applications
 | overseerr.destination.namespace | string | `"media-apps"` | Namespace |
 | overseerr.enabled | bool | `false` | Enable overseerr |
 | overseerr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| overseerr.targetRevision | string | `"1.1.0"` | [overseerr Helm Chart](https://github.com/pree/helm-charts/tree/master/charts/overseerr) |
+| overseerr.targetRevision | string | `"1.1.1"` | [overseerr Helm Chart](https://github.com/pree/helm-charts/tree/master/charts/overseerr) |
 | overseerr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/overseerr/values.yaml) | Helm values |
 | prowlarr | object | [example](./examples/prowlarr.yaml) | [Prowlarr](https://github.com/Prowlarr/Prowlarr) |
 | prowlarr.chart | string | `"prowlarr"` | Chart |
