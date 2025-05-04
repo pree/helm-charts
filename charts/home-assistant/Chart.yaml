@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.54.1
+version: 1.54.2
 # renovate: image=ghcr.io/home-assistant/home-assistant
 appVersion: "2025.4.4"
 keywords:
@@ -19,7 +19,7 @@ maintainers:
     email: pascal@reeb.io
 dependencies:
   - name: common
-    repository: https://bjw-s.github.io/helm-charts/
+    repository: https://bjw-s-labs.github.io/helm-charts/
     version: 1.5.1
   - name: postgresql
     version: 16.6.6
