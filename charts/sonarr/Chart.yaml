@@ -2,7 +2,7 @@ apiVersion: v2
 name: sonarr
 description: Smart PVR for newsgroup and bittorrent users
 type: application
-version: 1.10.2
+version: 1.10.3
 # renovate: image=ghcr.io/home-operations/sonarr
 appVersion: "4.0.14.2938"
 keywords:
@@ -20,7 +20,7 @@ maintainers:
     email: pascal@reeb.io
 dependencies:
   - name: common
-    repository: https://bjw-s.github.io/helm-charts/
+    repository: https://bjw-s-labs.github.io/helm-charts/
     version: 1.5.1
 annotations:
   artifacthub.io/changes: |
