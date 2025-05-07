@@ -2,9 +2,9 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first
 type: application
-version: 1.54.2
+version: 1.55.0
 # renovate: image=ghcr.io/home-assistant/home-assistant
-appVersion: "2025.4.4"
+appVersion: "2025.5.0"
 keywords:
   - home-assistant
   - hass
