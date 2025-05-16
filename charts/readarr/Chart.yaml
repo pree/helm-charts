@@ -2,7 +2,7 @@ apiVersion: v2
 name: readarr
 description: Book Manager and Automation (Sonarr for Ebooks)
 type: application
-version: 1.14.2
+version: 1.14.3
 # renovate: image=ghcr.io/home-operations/readarr
 appVersion: "0.4.15.2787"
 keywords:
@@ -21,7 +21,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://bjw-s-labs.github.io/helm-charts/
-    version: 1.5.1
+    version: 4.0.0
 annotations:
   artifacthub.io/changes: |
     - kind: changed
