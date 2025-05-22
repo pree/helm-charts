@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.7.9](https://img.shields.io/badge/Version-0.7.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.9](https://img.shields.io/badge/AppVersion-0.7.9-informational?style=flat-square)
+![Version: 0.7.10](https://img.shields.io/badge/Version-0.7.10-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.10](https://img.shields.io/badge/AppVersion-0.7.10-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -59,14 +59,14 @@ Argo CD app-of-apps config for media applications
 | prowlarr.destination.namespace | string | `"media-apps"` | Namespace |
 | prowlarr.enabled | bool | `false` | Enable Prowlarr |
 | prowlarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| prowlarr.targetRevision | string | `"1.44.0"` | [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr) |
+| prowlarr.targetRevision | string | `"1.45.0"` | [prowlarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/prowlarr) |
 | prowlarr.values | object | [upstream values](https://github.com/pree/charts/blob/master/charts/prowlarr/values.yaml) | Helm values |
 | radarr | object | [example](./examples/radarr.yaml) | [Radarr](https://radarr.video/) |
 | radarr.chart | string | `"radarr"` | Chart |
 | radarr.destination.namespace | string | `"media-apps"` | Namespace |
 | radarr.enabled | bool | `false` | Enable Radarr |
 | radarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| radarr.targetRevision | string | `"1.19.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
+| radarr.targetRevision | string | `"1.20.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
 | radarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml) | Helm values |
 | readarr | object | [example](./example/readarr.yaml) | [Readarr](https://github.com/Readarr/Readarr) |
 | readarr.chart | string | `"readarr"` | Chart |
