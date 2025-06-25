@@ -52,7 +52,7 @@ radarr:
   # radarr.chart -- Chart
   chart: "radarr"
   # radarr.targetRevision -- [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr)
-  targetRevision: "1.22.0"
+  targetRevision: "1.23.0"
   # radarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml)
   values: {}
@@ -92,7 +92,7 @@ readarr:
   # readarr.chart -- Chart
   chart: "readarr"
   # readarr.targetRevision -- [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr)
-  targetRevision: "1.16.0"
+  targetRevision: "1.17.0"
   # readarr.values -- Helm values
   # @default -- [upstream values](https://github.com/pree/charts/blob/master/charts/readarr/values.yaml)
   values: {}
