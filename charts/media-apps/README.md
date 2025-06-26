@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.7.13](https://img.shields.io/badge/Version-0.7.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.13](https://img.shields.io/badge/AppVersion-0.7.13-informational?style=flat-square)
+![Version: 0.7.14](https://img.shields.io/badge/Version-0.7.14-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.14](https://img.shields.io/badge/AppVersion-0.7.14-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -66,14 +66,14 @@ Argo CD app-of-apps config for media applications
 | radarr.destination.namespace | string | `"media-apps"` | Namespace |
 | radarr.enabled | bool | `false` | Enable Radarr |
 | radarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| radarr.targetRevision | string | `"1.22.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
+| radarr.targetRevision | string | `"1.23.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
 | radarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml) | Helm values |
 | readarr | object | [example](./example/readarr.yaml) | [Readarr](https://github.com/Readarr/Readarr) |
 | readarr.chart | string | `"readarr"` | Chart |
 | readarr.destination.namespace | string | `"media-apps"` | Namespace |
 | readarr.enabled | bool | `false` | Enable Readarr |
 | readarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| readarr.targetRevision | string | `"1.16.0"` | [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr) |
+| readarr.targetRevision | string | `"1.17.0"` | [readarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/readarr) |
 | readarr.values | object | [upstream values](https://github.com/pree/charts/blob/master/charts/readarr/values.yaml) | Helm values |
 | sonarr | object | [example](./examples/sonarr.yaml) | [Sonarr](https://sonarr.tv/) |
 | sonarr.chart | string | `"sonarr"` | Chart |
