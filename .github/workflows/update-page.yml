@@ -26,8 +26,9 @@ jobs:
 
       - name: Create gh pages worktree
         run: |
-          echo "gh_pages_worktree=$(mktemp -d)" >> $GITHUB_ENV
+          gh_pages_worktree=$(mktemp -d)
           git worktree add "$gh_pages_worktree" gh-pages || true
+          echo "gh_pages_worktree=$gh_pages_worktree" >> $GITHUB_ENV
 
       - name: Update README
         run: |
