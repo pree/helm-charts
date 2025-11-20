@@ -112,7 +112,7 @@ clusterplex:
   # clusterplex.chart -- Chart
   chart: "clusterplex"
   # clusterplex.targetRevision -- [clusterplex Helm chart](https://github.com/pabloromeo/clusterplex/tree/master/charts/clusterplex)
-  targetRevision: "1.1.9"
+  targetRevision: "1.1.10"
   # clusterplex.values -- Helm values
   # @default -- [upstream values](https://github.com/pabloromeo/clusterplex/blob/master/charts/clusterplex/values.yaml)
   values: {}

@@ -1,6 +1,6 @@
 # media-apps
 
-![Version: 0.7.14](https://img.shields.io/badge/Version-0.7.14-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.14](https://img.shields.io/badge/AppVersion-0.7.14-informational?style=flat-square)
+![Version: 0.7.15](https://img.shields.io/badge/Version-0.7.15-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.7.15](https://img.shields.io/badge/AppVersion-0.7.15-informational?style=flat-square)
 
 Argo CD app-of-apps config for media applications
 
@@ -31,7 +31,7 @@ Argo CD app-of-apps config for media applications
 | clusterplex.destination.namespace | string | `"media-apps"` | Namespace |
 | clusterplex.enabled | bool | `false` | Enable clusterplex |
 | clusterplex.repoURL | string | [repo](https://github.com/pabloromeo/clusterplex) | Repo URL |
-| clusterplex.targetRevision | string | `"1.1.9"` | [clusterplex Helm chart](https://github.com/pabloromeo/clusterplex/tree/master/charts/clusterplex) |
+| clusterplex.targetRevision | string | `"1.1.10"` | [clusterplex Helm chart](https://github.com/pabloromeo/clusterplex/tree/master/charts/clusterplex) |
 | clusterplex.values | object | [upstream values](https://github.com/pabloromeo/clusterplex/blob/master/charts/clusterplex/values.yaml) | Helm values |
 | jellyfin | object | [example](./example/jellyfin.yaml) | [Jellyfin](https://github.com/jellyfin/jellyfin) |
 | jellyfin.chart | string | `"jellyfin"` | Chart |
