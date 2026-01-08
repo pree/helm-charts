@@ -1776,6 +1776,48 @@ entries:
           description: use template to generate README.md
     apiVersion: v2
     appVersion: 2025.6.3
+    created: "2026-01-08T23:56:25.329932424Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.7.27
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 22.0.0
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.1.20
+    description: Open source home automation that puts local control and privacy first
+    digest: 4f10c495ea645ecc776d256cca3358c97f9eae753fa3cd2f40380668abc200ed
+    home: https://github.com/pree/helm-charts/tree/master/charts/home-assistant
+    icon: https://raw.githubusercontent.com/home-assistant/home-assistant.io/current/source/images/favicon-192x192.png
+    keywords:
+    - home-assistant
+    - hass
+    - homeassistant
+    - smarthome
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/home-assistant-1.60.4/home-assistant-1.60.4.tgz
+    version: 1.60.4
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 2025.6.3
     created: "2025-08-24T15:25:07.78275738Z"
     dependencies:
     - name: common
@@ -9907,6 +9949,38 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 2.3.2.5245
+    created: "2026-01-08T23:56:25.502638959Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+      base stack to integrate with your various PVR apps
+    digest: 168c27120c22379302e5200d3fec7e25e895756304c3d6f84e5e92ce1de61bcb
+    home: https://github.com/pree/helm-charts/tree/master/charts/prowlarr
+    icon: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/512.png
+    keywords:
+    - prowlarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: prowlarr
+    sources:
+    - https://github.com/Prowlarr/Prowlarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/prowlarr-1.50.1/prowlarr-1.50.1.tgz
+    version: 1.50.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 2.0.2.5116
     created: "2025-08-24T15:25:58.422883538Z"
     dependencies:
@@ -12087,6 +12161,37 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/prowlarr-1.1.0/prowlarr-1.1.0.tgz
     version: 1.1.0
   radarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 5.28.0.10205
+    created: "2026-01-08T23:56:25.673524317Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: f762179f91b97c7d9dd2febd0f941588706f8f38cc6c00503a3743aafa74dcfa
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.25.1/radarr-1.25.1.tgz
+    version: 1.25.1
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -14435,6 +14540,37 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 4.0.16.2946
+    created: "2026-01-08T23:56:25.827563716Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: eef5a2257cd44576c9286e25eee3974da3ed7447531fcfeac7f4658ad19b57b5
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.12.1/sonarr-1.12.1.tgz
+    version: 1.12.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 4.0.15.2940
     created: "2025-08-24T15:25:59.312427734Z"
     dependencies:
@@ -15482,4 +15618,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2025-08-24T15:25:59.313650845Z"
+generated: "2026-01-08T23:56:25.828755675Z"
