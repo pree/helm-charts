@@ -38,7 +38,7 @@ Argo CD app-of-apps config for media applications
 | jellyfin.destination.namespace | string | `"media-apps"` | Namespace |
 | jellyfin.enabled | bool | `false` | Enable Jellyfin |
 | jellyfin.repoURL | string | [repo](https://jellyfin.github.io/jellyfin-helm) | Repo URL |
-| jellyfin.targetRevision | string | `"2.3.0"` | [jellyfin Helm chart](https://github.com/jellyfin/jellyfin-helm/tree/master/charts/jellyfin) |
+| jellyfin.targetRevision | string | `"2.7.0"` | [jellyfin Helm chart](https://github.com/jellyfin/jellyfin-helm/tree/master/charts/jellyfin) |
 | jellyfin.values | object | [upstream values](https://github.com/jellyfin/jellyfin-helm/blob/master/charts/jellyfin/values.yaml) | Helm values |
 | nfsMount | object | `{"chart":"nfs-mount","destination":{"namespace":"media-apps"},"enabled":false,"name":"nas-media","repoURL":"https://charts.pree.dev","targetRevision":"0.1.12","values":{}}` | This is used to create a PVC for a media share via NFS |
 | nfsMount.chart | string | `"nfs-mount"` | Chart |
