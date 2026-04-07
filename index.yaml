@@ -10005,6 +10005,35 @@ entries:
         - kind: changed
           description: use ghcr.io as image repository
     apiVersion: v2
+    appVersion: 1.35.0
+    created: "2026-04-07T08:29:08.083970213Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: Request management and media discovery tool for the Plex ecosystem
+    digest: 8ca7b0274670675f68c49c8769305a6343a269e8ab733c9fad2ad79dc68fea03
+    home: https://github.com/pree/helm-charts/tree/master/charts/overseer
+    icon: https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png
+    keywords:
+    - radarr
+    - servarr
+    - plex
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: overseerr
+    sources:
+    - https://github.com/sct/overseerr
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/overseerr-1.2.0/overseerr-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use ghcr.io as image repository
+    apiVersion: v2
     appVersion: 1.34.0
     created: "2025-05-04T18:45:33.160197348Z"
     dependencies:
@@ -12391,6 +12420,37 @@ entries:
     - https://github.com/pree/helm-charts/releases/download/prowlarr-1.1.0/prowlarr-1.1.0.tgz
     version: 1.1.0
   radarr:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
+    appVersion: 6.1.2.10359
+    created: "2026-04-07T08:29:08.226089771Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: A fork of Sonarr to work with movies à la Couchpotato
+    digest: 84edcbcc2037baa5f5f8979bd7766620792ea20f2751fa8557a9c7f1fe2c8197
+    home: https://github.com/pree/helm-charts/tree/master/charts/radarr
+    icon: https://raw.githubusercontent.com/Radarr/Radarr/develop/Logo/512.png
+    keywords:
+    - radarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: radarr
+    sources:
+    - https://github.com/Radarr/Radarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/radarr-1.27.0/radarr-1.27.0.tgz
+    version: 1.27.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -15910,4 +15970,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2026-04-07T08:27:48.748310339Z"
+generated: "2026-04-07T08:29:08.22689061Z"
