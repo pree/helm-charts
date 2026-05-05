@@ -1,6 +1,6 @@
 # sonarr
 
-![Version: 1.13.0](https://img.shields.io/badge/Version-1.13.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.17.2953](https://img.shields.io/badge/AppVersion-4.0.17.2953-informational?style=flat-square)
+![Version: 1.13.1](https://img.shields.io/badge/Version-1.13.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.0.17.2953](https://img.shields.io/badge/AppVersion-4.0.17.2953-informational?style=flat-square)
 
 Smart PVR for newsgroup and bittorrent users
 
@@ -21,7 +21,7 @@ Smart PVR for newsgroup and bittorrent users
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s-labs.github.io/helm-charts/ | common | 1.5.1 |
+| https://bjw-s-labs.github.io/helm-charts/ | common | 5.0.0 |
 
 ## Values
 
