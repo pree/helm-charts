@@ -1,5 +1,6 @@
 # pree's Helm Charts
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/pree/helm-charts/badge)](https://scorecard.dev/viewer/?uri=github.com/pree/helm-charts)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/pree-helm-charts)](https://artifacthub.io/packages/search?repo=pree-helm-charts)
 ![Release Charts](https://github.com/pree/helm-charts/workflows/Release%20Charts/badge.svg)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
