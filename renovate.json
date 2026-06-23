@@ -73,7 +73,11 @@
                 "norwoodj/helm-docs"
             ],
             "groupName": "helm-docs"
-        }
+        },
+	{
+	    "matchPackageNames": ["ghcr.io/home-assistant/home-assistant"],
+	    "automerge": true
+	}
     ],
     "postUpgradeTasks": {
         "commands": [
