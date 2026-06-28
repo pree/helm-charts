@@ -32,7 +32,7 @@ Request management and media discovery tool for the Plex ecosystem
 [<img alt="overseer" src="https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png" width="128">](charts/overseer)
 #### [prowlarr](charts/prowlarr) chart
 
-![Version: 1.5.x](https://img.shields.io/badge/version-1.5.x-brightgreen) ![App version: 2.4.x](https://img.shields.io/badge/app%20version-2.4.x-brightgreen)
+![Version: 1.5.x](https://img.shields.io/badge/version-1.5.x-brightgreen) ![App version: 2.5.x](https://img.shields.io/badge/app%20version-2.5.x-brightgreen)
 
 Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps
 
