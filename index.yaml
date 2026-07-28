@@ -6,6 +6,30 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 0.3.97
+    created: "2026-07-28T18:37:54.499801846Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.1
+    description: Argo CD app-of-apps config for home automation applications
+    digest: bac1380ad6156fcf786689b6122c1ace6d6578b425a836590b42938da4f5e362
+    home: https://github.com/pree/helm-charts/tree/master/charts/ha-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: ha-apps
+    sources:
+    - https://github.com/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/ha-apps-0.3.97/ha-apps-0.3.97.tgz
+    version: 0.3.97
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 0.3.96
     created: "2026-07-28T16:57:04.843392325Z"
     dependencies:
@@ -15758,6 +15782,37 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 4.0.19.2995
+    created: "2026-07-28T18:37:54.655845742Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: e59d5e8efb9f1adeff0b36ff2fe523476a1cf39ffb55f8bb7140eb16817d082d
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.17.0/sonarr-1.17.0.tgz
+    version: 1.17.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 4.0.18.2978
     created: "2026-06-25T21:57:43.602363455Z"
     dependencies:
@@ -16960,4 +17015,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2026-07-28T17:16:29.720688232Z"
+generated: "2026-07-28T18:37:54.657190291Z"
