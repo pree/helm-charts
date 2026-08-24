@@ -75,7 +75,13 @@
             "groupName": "helm-docs"
         },
 	{
-	    "matchPackageNames": ["ghcr.io/home-assistant/home-assistant"],
+	    "matchPackageNames": [
+                "ghcr.io/home-assistant/home-assistant",
+                "ghcr.io/home-operations/readarr",
+                "ghcr.io/home-operations/prowlarr",
+                "ghcr.io/home-operations/sonarr",
+                "ghcr.io/home-operations/radarr"
+	    ],
 	    "automerge": true
 	}
     ],
