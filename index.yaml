@@ -8670,6 +8670,30 @@ entries:
         - kind: changed
           chore: update jellyfin to 3.0.0
     apiVersion: v2
+    appVersion: 0.8.9
+    created: "2026-09-02T16:51:39.404001472Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.1
+    description: Argo CD app-of-apps config for media applications
+    digest: 0ffaa336329fdbcb07b8b22a4cbec73120af870be29f098b8d11cd8da81fa8c2
+    home: https://github.com/pree/helm-charts/tree/master/charts/media-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: media-apps
+    sources:
+    - https://github.com/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/media-apps-0.8.9/media-apps-0.8.9.tgz
+    version: 0.8.9
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          chore: update jellyfin to 3.0.0
+    apiVersion: v2
     appVersion: 0.8.8
     created: "2026-08-24T08:06:15.92544329Z"
     dependencies:
@@ -17610,4 +17634,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2026-09-02T16:51:01.775673832Z"
+generated: "2026-09-02T16:51:39.405084525Z"
