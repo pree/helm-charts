@@ -6,6 +6,30 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 0.3.99
+    created: "2026-09-21T20:39:11.554436204Z"
+    dependencies:
+    - name: argoconfig
+      repository: https://charts.adfinis.com
+      version: 0.9.1
+    description: Argo CD app-of-apps config for home automation applications
+    digest: 5547af9017b888564ab303be0d69f2bba014780d96592dda0e378a831f9395bf
+    home: https://github.com/pree/helm-charts/tree/master/charts/ha-apps
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: ha-apps
+    sources:
+    - https://github.com/pree/helm-charts
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/ha-apps-0.3.99/ha-apps-0.3.99.tgz
+    version: 0.3.99
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 0.3.98
     created: "2026-09-02T16:51:01.77452971Z"
     dependencies:
@@ -17972,4 +17996,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2026-09-21T20:38:49.464389359Z"
+generated: "2026-09-21T20:39:11.555319024Z"
