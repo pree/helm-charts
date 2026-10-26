@@ -66,7 +66,7 @@ Argo CD app-of-apps config for media applications
 | radarr.destination.namespace | string | `"media-apps"` | Namespace |
 | radarr.enabled | bool | `false` | Enable Radarr |
 | radarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| radarr.targetRevision | string | `"1.34.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
+| radarr.targetRevision | string | `"1.35.0"` | [radarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/radarr) |
 | radarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/radarr/values.yaml) | Helm values |
 | readarr | object | [example](./example/readarr.yaml) | [Readarr](https://github.com/Readarr/Readarr) |
 | readarr.chart | string | `"readarr"` | Chart |
@@ -80,7 +80,7 @@ Argo CD app-of-apps config for media applications
 | sonarr.destination.namespace | string | `"media-apps"` | Namespace |
 | sonarr.enabled | bool | `false` | Enable Sonarr |
 | sonarr.repoURL | string | [repo](https://github.com/pree/helm-charts) | Repo URL |
-| sonarr.targetRevision | string | `"1.25.0"` | [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr) |
+| sonarr.targetRevision | string | `"1.32.0"` | [sonarr Helm chart](https://github.com/pree/helm-charts/tree/master/charts/sonarr) |
 | sonarr.values | object | [upstream values](https://github.com/pree/helm-charts/blob/master/charts/sonarr/values.yaml) | Helm values |
 
 ## License
