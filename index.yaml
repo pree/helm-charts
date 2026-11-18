@@ -17198,6 +17198,37 @@ entries:
         - kind: changed
           description: use template to generate README.md
     apiVersion: v2
+    appVersion: 5.0.0.2997
+    created: "2026-11-18T02:16:02.749119743Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s-labs.github.io/helm-charts/
+      version: 1.5.1
+    description: Smart PVR for newsgroup and bittorrent users
+    digest: 17b98ac39abc873df9d5d7fdcb3cfce9cb384e47c98d436e538ef13fac4bbe75
+    home: https://github.com/pree/helm-charts/tree/master/charts/sonarr
+    icon: https://raw.githubusercontent.com/Sonarr/Sonarr/develop/Logo/512.png
+    keywords:
+    - sonarr
+    - servarr
+    - torrent
+    - usenet
+    maintainers:
+    - email: pascal@reeb.io
+      name: pree
+    name: sonarr
+    sources:
+    - https://github.com/Sonarr/Sonarr
+    - https://github.com/home-operations/containers
+    type: application
+    urls:
+    - https://github.com/pree/helm-charts/releases/download/sonarr-1.37.0/sonarr-1.37.0.tgz
+    version: 1.37.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: use template to generate README.md
+    apiVersion: v2
     appVersion: 5.0.0.2800
     created: "2026-10-26T03:16:03.870615624Z"
     dependencies:
@@ -18896,4 +18927,4 @@ entries:
     urls:
     - https://github.com/pree/helm-charts/releases/download/sonarr-1.0.9/sonarr-1.0.9.tgz
     version: 1.0.9
-generated: "2026-11-16T21:31:03.291344944Z"
+generated: "2026-11-18T02:16:02.749770227Z"
